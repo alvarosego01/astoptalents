@@ -17,7 +17,7 @@
 
 @screen md {
     .h1 {
-        @apply text-7xl;
+        @apply text-6xl;
     }
 
     .h2 {
@@ -28,7 +28,7 @@
 /* Buttons */
 .btn,
 .btn-sm {
-    @apply font-medium inline-flex items-center justify-center rounded leading-normal transition duration-150 ease-in-out;
+    @apply inline-flex items-center justify-center font-medium leading-normal transition duration-150 ease-in-out rounded;
 }
 
 .btn {
@@ -68,12 +68,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-textarea,
 .form-multiselect,
 .form-select {
-    @apply py-3 px-4;
+    @apply px-4 py-3;
 }
 
 .form-input,
 .form-textarea {
-    @apply placeholder-gray-500 leading-snug;
+    @apply leading-snug placeholder-gray-500;
 }
 
 .form-select {

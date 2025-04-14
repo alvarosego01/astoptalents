@@ -21,31 +21,35 @@
         <div class="grid grid-cols-3 pt-32 pb-12 md:pt-40 md:pb-16">
 
             <!-- Hero content -->
-            <div class="col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-left info">
+            <div class="flex flex-col items-start justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-left info">
 
-                <div data-aos="zoom-out">
+                {# <div data-aos="zoom-out">
                     <div
                         class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
                         <div class="text-gray-400">
                             Lorem ipsum dolor sit amet consectetur
                         </div>
                     </div>
-                </div>
-                <h1 class="mb-6 leading-normal h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
-                    <span class="text-red-500">Hello world!</span> <br>
-                    Lorem ipsum dolor sit amet
+                </div> #}
+                <h1 class="mb-6 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+                    <span class="text-darkBlue">
+                      Hire Top Remote Talent <br>
+                      in Latin America &
+                    </span> <br>
+                    Save Up 80%
                 </h1>
-                <p class="mb-10 text-xl text-gray-400 " data-aos="zoom-out" data-aos-delay="200">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dolorem reprehenderit fugiat magni
-                    nulla necessitatibus eaque nobis excepturi quis optio similique, nam nisi quidem tempora ea quos
-                    nihil eius aliquam.
+                <p class="mb-10 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="200">
+                   <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br>
+AlphaScale Talent connects businesses with top-tier remote professionals, offering a diverse talent pool and cutting-edge virtual office space technology.
+
+
                 </p>
                 {# <p>
                     {{ t_e( "HOLA MUNDO" ) }}
                 </p> #}
 
                 <div
-                    class="max-w-xs mx-auto space-y-4 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
+                    class="max-w-xs space-y-4 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
                     data-aos="zoom-out" data-aos-delay="300">
 
                     <div>
@@ -71,7 +75,9 @@
 
             </div>
 
-            <div class="col-span-3 mx-auto text-center pcTab:col-span-1 md:mx-0 md:text-left image">
+            <div class="col-span-3 mx-auto text-center pcTab:col-span-1 md:mx-0 md:text-left image ">
+
+               <img class="mx-auto md:max-w-none" src="{{ get_file('/images/talent_header.svg') }}" >
 
             </div>
 
@@ -80,7 +86,7 @@
     </div>
 </section>
 
-<section class="mb-10">
+{# <section class="mb-10">
 
     <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
@@ -92,9 +98,9 @@
 
     </div>
 
-</section>
+</section> #}
 
-{% include "pages/components/homePage/AboutMe.twig" %}
+{# {% include "pages/components/homePage/AboutMe.twig" %} #}
 
 
 
