@@ -27,10 +27,10 @@ jobs:
     #     run: composer install --no-dev --optimize-autoloader
         # Install Node.js dependencies
       - name: Install Node.js Dependencies
-        run: yarn install
+        run: pnpm i
     #   # Build assets with Yarn
       - name: Build Assets
-        run: yarn build
+        run: npm run build
       - name: Archive Build Output
         run: zip -r build.zip . -x ".github" "package.json" "gulpfile.js" "README.md" ".gitignore" ".vite.config.js" "node_modules" "pnpm-lock.yaml" ".env"
 
