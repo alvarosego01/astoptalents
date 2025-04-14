@@ -26,9 +26,15 @@ jobs:
     #   - name: Install Composer Dependencies
     #     run: composer install --no-dev --optimize-autoloader
         # Install Node.js dependencies
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 23
+
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Install Node.js Dependencies
-        run: npm i
-    #   # Build assets with Yarn
+        run: pnpm i
       - name: Build Assets
         run: npm run build
       - name: Archive Build Output
