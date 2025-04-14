@@ -16,7 +16,8 @@ module.exports = {
         "grayish": "#787F84",
         "lightBlue": "#95B3D7",
         "paleBlue": "#C5D9F1",
-        "lavenderGray": "#D4D2E3"
+        "lavenderGray": "#D4D2E3",
+        "lightBlue": "#f5fcff",
       },
       animation: {
         'endless': 'endless 20s linear infinite',

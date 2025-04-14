@@ -2,11 +2,13 @@
 
 {% from 'components/buttons/Button.twig' import Component as Button %}
 
+{% from 'components/cards/PostCard_1.twig' import Component as PostCard1 %}
+
 
 {% block content %}
 
 <!-- Hero -->
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden homeHeader homeSection_00">
 
     <!-- Bg gradient -->
     {# <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none "
@@ -38,19 +40,14 @@
                     </span> <br>
                     Save Up 80%
                 </h1>
-                <p class="mb-10 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="200">
+                <p class="mb-10 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
                    <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br>
-AlphaScale Talent connects businesses with top-tier remote professionals, offering a diverse talent pool and cutting-edge virtual office space technology.
-
-
+                  AlphaScale Talent connects businesses with top-tier remote <br> professionals, offering a diverse talent pool and cutting-edge <br> virtual office space technology.
                 </p>
-                {# <p>
-                    {{ t_e( "HOLA MUNDO" ) }}
-                </p> #}
 
                 <div
                     class="max-w-xs space-y-4 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
-                    data-aos="zoom-out" data-aos-delay="300">
+                    data-aos="zoom-out" data-aos-delay="200">
 
                     <div>
                         {{ Button({
@@ -72,11 +69,9 @@ AlphaScale Talent connects businesses with top-tier remote professionals, offeri
 
                 </div>
 
-
             </div>
 
-            <div class="col-span-3 mx-auto text-center pcTab:col-span-1 md:mx-0 md:text-left image ">
-
+            <div class="col-span-3 mx-auto text-center pcTab:col-span-1 md:mx-0 md:text-left image " data-aos="zoom-out" data-aos-delay="250">
                <img class="mx-auto md:max-w-none" src="{{ get_file('/images/talent_header.svg') }}" >
 
             </div>
@@ -99,6 +94,98 @@ AlphaScale Talent connects businesses with top-tier remote professionals, offeri
     </div>
 
 </section> #}
+
+<section class="mb-20 homeSection_01">
+
+      <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+          <div class="px-10 py-20 pt-20 rounded-xl contentCard bg-lightBlue">
+
+              <h2 class="mx-auto mb-10 font-normal text-center h4 title text-darkBlue">
+                <strong>Hiring Remote Talent?</strong> See How Our Process Works
+              </h2>
+
+          </div>
+
+      </div>
+
+</section>
+
+<section class="mb-20 homeSection_02">
+
+    <div class="max-w-6xl px-10 mx-auto sm:px-6">
+
+          <div class="sectionTop">
+
+              <h2 class="mx-auto mb-10 text-center h4 title text-darkBlue"
+              data-aos="zoom-out" data-aos-delay="100"
+              >
+                Scale Smarter: Tips, Trends & Talent Strategies
+              </h2>
+
+              <p class="mb-10 text-base text-center text-grayish"
+              data-aos="zoom-out" data-aos-delay="150"
+              >
+                Stay ahead in remote hiring with expert tips, success stories, <br>
+                and top Latin American talent.
+              </p>
+
+          </div>
+
+          <div class="sectionContent">
+
+            <div class="grid grid-cols-1 gap-20 mb-14 cards md:grid-cols-3">
+
+              <div class="col-span-1 card"
+              data-aos="zoom-out" data-aos-delay="100"
+              >
+                {{
+                  PostCard1({
+                    src: get_file('/images/card_1.png'),
+                    title: 'How to hire remote talent in LATAM'
+                  })
+                }}
+              </div>
+              <div class="col-span-1 card"
+              data-aos="zoom-out" data-aos-delay="150"
+              >
+                {{
+                  PostCard1({
+                    src: get_file('/images/card_2.png'),
+                    title: 'The benefits of  Remote Talent Acquisition'
+                  })
+                }}
+              </div>
+              <div class="col-span-1 card"
+              data-aos="zoom-out" data-aos-delay="250"
+              >
+                {{
+                  PostCard1({
+                    src: get_file('/images/card_3.png'),
+                    title: 'Beyond Borders: The Rise of Global Remote '
+                  })
+                }}
+              </div>
+
+            </div>
+
+            <div class="sectionButton">
+              <div class="flex justify-center "
+              data-aos="zoom-out" data-aos-delay="300"
+              >
+                {{ Button({
+                  text: "Explore Articles",
+                  url: "#0",
+                  type: 'primary'
+                }) }}
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+
+</section>
 
 {# {% include "pages/components/homePage/AboutMe.twig" %} #}
 
