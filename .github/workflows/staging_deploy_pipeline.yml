@@ -27,7 +27,7 @@ jobs:
     #     run: composer install --no-dev --optimize-autoloader
         # Install Node.js dependencies
       - name: Install Node.js Dependencies
-        run: pnpm i
+        run: npm i
     #   # Build assets with Yarn
       - name: Build Assets
         run: npm run build
