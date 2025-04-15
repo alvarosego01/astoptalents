@@ -1,0 +1,49 @@
+{% macro Component(param = {
+    title: '',
+    subTitle: '',
+    desc: '',
+    img: ''
+    alt: ''
+    subTag: ''
+}) %}
+
+<div class="flex flex-col gap-6 TalentCard_1">
+
+  {# <div class="image">
+    <img src="{{ param.src }}" alt="{{ param.alt }}" class="w-full h-auto rounded-t-lg" />
+  </div>
+  <div class="info">
+    <h3 class="mb-2 text-2xl font-semibold text-center title text-darkBlue">{{ param.title }}</h3>
+
+    {% if param.desc != '' %}
+      <p class="mb-4 text-base desc text-grayish">{{ param.desc }}</p>
+    {% endif %}
+
+  </div> #}
+
+    <div class="topContent">
+      <div class="image">
+        <img src="{{ param.img }}" alt="{{ param.alt }}" class="w-full h-auto rounded-full" />
+      </div>
+      <h3 class="title">
+        {{ param.title }}
+      </h3>
+      <span class="subTitle">
+        {{ param.subTitle }}
+      </span>
+    </div>
+    {% if param.desc != '' %}
+      <div class="desc">
+        <p class="">
+
+        </p>
+      </div>
+    {% endif %}
+    <span class="subTag">
+
+    </span>
+
+</div>
+
+
+{% endmacro %}
