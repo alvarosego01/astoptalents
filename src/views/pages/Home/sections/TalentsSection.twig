@@ -1,0 +1,49 @@
+{% from 'components/cards/TalentCard_1.twig' import Component as TalentCard_1 %}
+
+  <div class="max-w-6xl px-10 mx-auto sm:px-6">
+
+    <div class="sectionTop">
+
+      <h2 class="mx-auto mb-10 text-center h4 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+        Meet the Talent Powering U.S. Teams
+      </h2>
+
+      <p class="mb-12 text-base text-center text-grayish" data-aos="zoom-out" data-aos-delay="150">
+        Explore a curated selection of top remote professionals across marketing, operations, tech, <br>
+        customer success, and more — all vetted, full-time, and ready to help your business grow.
+      </p>
+
+    </div>
+
+    <div class="sectionContent">
+
+      <div class="grid grid-cols-1 gap-6 mb-14 cards md:grid-cols-3">
+
+        <div data-aos="zoom-out" data-aos-delay="200">
+          {{
+            TalentCard_1({
+              img: get_file('/images/talent_person.png'),
+              title: 'Ariel Montoya',
+              subTitle: 'social media manager',
+              desc: 'Skilled in growing brand presence, boosting engagement, and driving results across all major platforms',
+              subTag: '$700 / month'
+            })
+          }}
+        </div>
+        <div data-aos="zoom-out" data-aos-delay="250">
+          {{
+            TalentCard_1({
+              img: get_file('/images/talent_person.png'),
+              title: 'Sophia Alvarez',
+              subTitle: 'project manager',
+              desc: 'Specializing in remote team leadership, deadline-driven execution, delivering high-impact results on time and budget',
+              subTag: '$900 / month'
+            })
+          }}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
