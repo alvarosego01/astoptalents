@@ -80,7 +80,7 @@
 
     <div class="px-10 py-20 pt-20 rounded-xl contentCard bg-lightBlue">
 
-      <h2 class="mx-auto mb-10 font-normal text-center h4 title text-darkBlue">
+      <h2 class="mx-auto mb-10 font-normal text-center h3 title text-darkBlue">
         <strong>Hiring Remote Talent?</strong> See How Our Process Works
       </h2>
 
@@ -96,7 +96,7 @@
 
     <div class="sectionTop">
 
-      <h2 class="mx-auto mb-10 text-center h4 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+      <h2 class="mx-auto mb-10 text-center h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
         Scale Smarter: Tips, Trends & Talent Strategies
       </h2>
 
@@ -154,9 +154,94 @@
 
 </section>
 
-<section class="mb-20 homeSection_03">
+<section class="mb-24 homeSection_03">
 
-  {% include "pages/Home/sections/TalentsSection.twig" %}
+  {% include "pages/home/sections/TalentsSection.twig" %}
+
+</section>
+
+<section class="mb-20 homeSection_04">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    <div class="px-10 py-24 rounded-[60px] contentCard bg-darkBlue">
+
+      <div class="sectionTop">
+        <h2 class="mx-auto mb-10 font-normal text-center h3 title text-mainWhite"
+        data-aos="zoom-out" data-aos-delay="100"
+        >
+          Choose Full-Time Latin Talent. <br>
+          Get Real Results
+        </h2>
+      </div>
+      <div class="sectionContent">
+          <div class="grid grid-cols-1 gap-6 mb-14 cards sm:grid-cols-2 md:grid-cols-4">
+
+            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            data-aos="zoom-out" data-aos-delay="150"
+            >
+              <div class="image">
+                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results01.png') }}">
+              </div>
+          <div class="flex items-center justify-center h-20 px-1 py-6 content">
+                <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
+                  Flawless English
+                </h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            data-aos="zoom-out" data-aos-delay="200"
+            >
+              <div class="image">
+                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results02.png') }}">
+              </div>
+          <div class="flex items-center justify-center h-20 px-1 py-6 content">
+                <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
+                  US Time Zones
+                </h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            data-aos="zoom-out" data-aos-delay="250"
+            >
+              <div class="image">
+                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results03.png') }}">
+              </div>
+           <div class="flex items-center justify-center h-20 px-1 py-6 content">
+                <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
+                  Highly Motivated
+                </h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            data-aos="zoom-out" data-aos-delay="300"
+            >
+              <div class="image">
+                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results04.png') }}">
+              </div>
+              <div class="flex items-center justify-center h-20 px-1 py-6 content">
+                <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
+                  Extensive <br>
+                  Background Checks
+                </h3>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="mb-20 homeSection_05">
+
+  {% include "pages/home/sections/ChooseSlider.twig" %}
 
 </section>
 
