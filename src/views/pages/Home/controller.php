@@ -14,6 +14,7 @@ class HomeController extends PageBaseController
     parent::__construct();
     $this->general_functions = new generalFunctions();
     $this->setTalents();
+    $this->setChooseSlider();
   }
 
   function setTalents()
@@ -66,6 +67,10 @@ class HomeController extends PageBaseController
     $this->add_to_context([
       'talents' => $talents,
     ]);
+  }
+
+  function setChooseSlider(){
+
   }
 
   protected function initialize()
