@@ -302,4 +302,6 @@ class StarterSite extends Site
         load_theme_textdomain(THEME_NAME, get_template_directory() . '/languages');
     }
 
+
+
 }
