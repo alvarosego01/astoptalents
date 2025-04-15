@@ -1,17 +1,28 @@
 <?php
 
 namespace App\Classes;
+use Timber\Timber;
 
-abstract class PageBaseController {
-  protected $context = [];
+abstract class PageBaseController
+{
+  protected $context;
+  protected $view;
 
-  public function __construct() {
-    $this->add_to_context();
+  public function __construct()
+  {
+    $this->context = Timber::context();
+    $this->initialize();
   }
 
-  abstract protected function add_to_context();
+  abstract protected function initialize();
 
-  public function get_context() {
-    return $this->context;
+  public function render()
+  {
+    Timber::render($this->view, $this->context);
+  }
+
+  protected function add_to_context($data)
+  {
+    $this->context = array_merge($this->context, $data);
   }
 }

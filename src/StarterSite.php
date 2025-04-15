@@ -269,6 +269,7 @@ class StarterSite extends Site
 
     $twig->addFunction(new Twig\TwigFunction('get_color', [new generalFunctions(), 'get_color']));
     $twig->addFunction(new Twig\TwigFunction('get_file', [new generalFunctions(), 'get_file']));
+    $twig->addFunction(new Twig\TwigFunction('print_r', [new generalFunctions(), 'print_r']));
 
 
     // $twig->addFunction(new Twig\TwigFunction('__', function ($text) {
