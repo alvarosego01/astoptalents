@@ -26,25 +26,6 @@ require_once THEME_ROOT_PATH . '/vendor/autoload.php';
 require_once THEME_ROOT_PATH . '/src/classes/index.php';
 require_once THEME_ROOT_PATH . '/src/StarterSite.php';
 
-// function get_pages_folders(){
-//   $pages_dir = get_template_directory() . '/src/views/pages';
-//   $folders = [];
-
-//   if (is_dir($pages_dir)) {
-//     $dir_contents = scandir($pages_dir);
-
-//     foreach ($dir_contents as $item) {
-//       if ($item !== '.' && $item !== '..' && is_dir($pages_dir . '/' . $item)) {
-//         $folders[] = 'src/views/pages/' . $item;
-//       }
-//     }
-//   }
-//   return $folders;
-
-// }
-
-// $pagesFolders = get_pages_folders();
-
 Timber\Timber::init();
 
 Timber::$dirname = [
