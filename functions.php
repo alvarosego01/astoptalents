@@ -1,13 +1,8 @@
 <?php
-
 /**
  * Timber starter-theme
  * https://github.com/timber/starter-theme
  */
-
-use App\Classes\generalFunctions;
-
-// use App\Classes\generalFunctions;
 
 if (!defined('THEME_ROOT_PATH')) {
   define('THEME_ROOT_PATH', __DIR__);
@@ -26,6 +21,10 @@ if (!defined('THEME_VERSION')) {
   define('THEME_VERSION', $theme->Version);
 }
 
+require_once THEME_ROOT_PATH . '/vendor/autoload.php';
+require_once THEME_ROOT_PATH . '/src/classes/index.php';
+require_once THEME_ROOT_PATH . '/src/StarterSite.php';
+
 function get_pages_folders(){
   $pages_dir = get_template_directory() . '/src/views/pages';
   $folders = [];
@@ -43,11 +42,8 @@ function get_pages_folders(){
 
 }
 
-require_once THEME_ROOT_PATH . '/vendor/autoload.php';
-require_once THEME_ROOT_PATH . '/src/classes/index.php';
-require_once THEME_ROOT_PATH . '/src/StarterSite.php';
-
 $pagesFolders = get_pages_folders();
+
 Timber\Timber::init();
 
 Timber::$dirname = [
