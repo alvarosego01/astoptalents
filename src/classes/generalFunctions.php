@@ -40,7 +40,6 @@ class generalFunctions
 
   public function get_wp_img($image_id,  $type)
   {
-
     $image_url = wp_get_attachment_url($image_id);
     $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
 
@@ -55,7 +54,6 @@ class generalFunctions
 
   public function get_file($path)
   {
-
     $files =  get_stylesheet_directory_uri() . '/resources/files';
     $file = $files . $path;
     return $file;
@@ -83,6 +81,4 @@ class generalFunctions
     add_action('template_redirect', [$this, 'start_buffer']);
     add_action('shutdown', [$this, 'end_buffer']);
   }
-
-
 }
