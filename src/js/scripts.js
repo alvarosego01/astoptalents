@@ -1,12 +1,10 @@
 
 AOS.init({
     once: true,
-    disable: 'phone',
-    duration: 500,
+    // disable: 'phone',
+    duration: 400,
     easing: 'ease-out-cubic',
 });
-
-
 document.addEventListener("DOMContentLoaded", function () {
     let lazyImages = [].slice.call(document.querySelectorAll("img.onLazyLoad"));
     if ("IntersectionObserver" in window) {
@@ -25,4 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
             lazyImageObserver.observe(lazyImage);
         });
     }
+});
+
+
+jQuery(document).ready(function () {
+
 });
