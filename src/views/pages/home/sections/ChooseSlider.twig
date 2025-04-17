@@ -1,4 +1,5 @@
-{% from 'components/buttons/Button.twig' import Component as Button %}
+
+{% from 'components/carousel/Carousel_1.twig' import Component as Carousel_1 %}
 
 <div class="max-w-6xl px-4 pb-20 mx-auto sm:px-6">
 
@@ -14,61 +15,6 @@
 
   <div class="sectionContent">
 
-    <div class="sliderContent">
-
-      <div class="grid grid-cols-1 gap-16 md:grid-cols-2 elementSlider" data-aos="fade-left" data-aos-delay="250">
-
-        <div class="relative col-span-1 image">
-
-          <div class="imageContent">
-            <img class="object-cover w-full h-full mx-auto" src="{{ get_file('/images/slider_0.png') }}">
-          </div>
-          <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-row justify-between w-full h-10 my-auto controls">
-
-            <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-mainWhite text-darkBlue left control left-4 hover:cursor-pointer">
-              <i class='text-2xl bx bx-chevron-left'></i>
-            </div>
-           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-mainWhite text-darkBlue left control right-4 hover:cursor-pointer">
-              <i class='text-2xl bx bx-chevron-right'></i>
-            </div>
-
-          </div>
-          <div class="w-full bullets">
-
-          </div>
-          <div class="absolute flex items-center justify-center w-full -bottom-24 buttonSection">
-            <div class="flex justify-center "  >
-              {{ Button({
-              text: "Explore Articles",
-              url: "#0",
-              type: 'primary'
-              }) }}
-            </div>
-          </div>
-
-        </div>
-        <div class="flex flex-col items-start justify-center col-span-1 gap-6 info">
-
-          <div class="icon">
-            <img class="mx-auto md:max-w-none" src="{{ get_file('/images/icons/icon_hands.png') }}">
-          </div>
-          <div class="flex flex-col gap-6 content">
-
-            <h3 class="font-bold leading-tight title h3 text-darkBlue">
-              Your Full-Service <br>
-              Talent Partner
-            </h3>
-            <p class="text-grayish">
-              We manage all aspects of hiring—including <br>
-              recruiting, vetting, compliance, and global payroll—<br>allowing you to focus on business growth
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+    {{ Carousel_1() }}
 
   </div>
