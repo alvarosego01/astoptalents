@@ -13,8 +13,11 @@
     </p>
   </div>
 
+
+{% if choose_slider|length > 0 %}
   <div class="sectionContent">
-
-    {{ Carousel_1() }}
-
+    {{ Carousel_1({
+      slides: choose_slider|raw,
+    }) }}
   </div>
+{% endif %}

@@ -1,16 +1,18 @@
 {% macro Component(param = {
-  slides: []
+  slides: [],
 }) %}
 
 {% from 'components/buttons/Button.twig' import Component as Button %}
 {% from 'components/cards/IconCard_1.twig' import Component as IconCard_1 %}
 
+{% set slides = param.slides %}
+
 {% if slides and slides|length > 0 %}
+<div class="relative Carousel_1"
+data-aos="zoom-out" data-aos-delay="250"
+>
 
-<div class="relative Carousel_1">
-
-  <div class="absolute top-0 bottom-0 left-0 right-0 z-10 grid grid-cols-1 gap-16 controls md:grid-cols-2"
-    data-aos="fade-in" data-aos-delay="250">
+  <div class="absolute top-0 bottom-0 left-0 right-0 z-10 grid grid-cols-1 gap-16 controls md:grid-cols-2">
 
     <div class="relative col-span-1 controlsContent">
 
@@ -43,26 +45,26 @@
     <div class="relative col-span-1 image">
 
       <div class="overflow-hidden rounded-[60px] imageContent ">
-        <img class="object-cover w-full h-full mx-auto animate__animated animate__pulse" src="{{ get_file('/images/slider_0.png') }}">
+        <img class="object-cover w-full h-full mx-auto animate__animated animate__pulse" src="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
       </div>
 
       <div class="absolute flex items-center justify-center w-full -bottom-24 buttonSection animate__animated animate__pulse">
         <div class="flex justify-center ">
           {{ Button({
-          text: "Explore Articles",
-          url: "#0",
+          text: slide.button.text,
+          url: slide.button.url,
           type: 'primary'
           }) }}
         </div>
       </div>
 
     </div>
-      <div class="flex items-center info animate__animated animate__pulse">
+      <div class="flex items-center info">
 
         {{ IconCard_1({
-          icon: "<img class='w-auto h-14' src='" ~ get_file(' /images/icons/icon_together.png') ~ "'>" ,
-          title: 'Your Full-Service <br> Talent Partner' ,
-          desc: 'We manage all aspects of hiring—including <br> recruiting, vetting, compliance, and global payroll—<br>allowing you to focus on business growth'
+          icon: slide.info.icon | raw,
+          title: slide.info.title,
+          desc: slide.info.desc,
         }) }}
 
       </div>
@@ -133,6 +135,13 @@
         // 5) Inicializar (ocultar todos excepto el primero)
         slides.forEach((s, i) => { if (i !== 0) s.classList.add('hidden'); });
         showSlide(0);
+
+        // 6) Auto change slide every 2 minutes
+        setInterval(() => {
+          current = (current + 1) % total;
+          showSlide(current);
+        }, 40000 );
+
       });
     </script>
 
