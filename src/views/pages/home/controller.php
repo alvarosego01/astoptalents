@@ -77,7 +77,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_together.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_together.png') ."'>",
           'title' => "Your Full-Service<br> Talent Partner",
           'desc' => "We manage all aspects of hiring—including<br> recruiting, vetting, compliance, and global payroll<br>—allowing you to focus on business growth"
         ],
@@ -92,7 +92,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_laptop_person.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_laptop_person.png') ."'>",
           'title' => "Immersive Virtual<br> Office Technology",
           'desc' => "Boost remote work with virtual office spaces<br> designed for collaboration, productivity, and stronger<br> team connections"
         ],
@@ -107,7 +107,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_check_2.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check_2.png') ."'>",
           'title' => "Your Satisfaction,<br> Guaranteed",
           'desc' => "Your success is our priority. If your hire doesn’t align<br> perfectly with your expectations, we’ll promptly<br> provide a replacement to ensure you’re fully satisfied."
         ],
@@ -122,7 +122,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_check.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check.png') ."'>",
           'title' => "Clear and<br> Transparent Pricing",
           'desc' => "Transparent pricing with no hidden costs ensures<br> risk-free hiring; you pay only when you find the<br>  ideal candidate."
         ],
@@ -137,7 +137,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_search_people.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_search_people.png') ."'>",
           'title' => "Access Trusted<br> Top Talent",
           'desc' => "Access top LATAM professionals remotely &<br> cut hiring costs without compromising quality.."
         ],
@@ -152,7 +152,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file(' /images/icons/icon_protect.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_protect.png') ."'>",
           'title' => "No Compliance<br> Worries",
           'desc' => "We manage all legal and compliance requirements,<br> strictly adhering to local employment regulations<br> across all operating countries"
         ],
