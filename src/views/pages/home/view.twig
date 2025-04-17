@@ -73,11 +73,120 @@
 
   <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
-    <div class="px-10 py-20 pt-20 rounded-xl contentCard bg-lightBlue">
+    <div class="px-10 py-24 lg:px-20 rounded-xl contentCard bg-lightBlue">
 
-      <h2 class="mx-auto mb-10 font-normal text-center h3 title text-darkBlue">
-        <strong>Hiring Remote Talent?</strong> See How Our Process Works
-      </h2>
+      <div class="mb-16 sectionTop">
+
+        <h2 class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+          <strong>Hiring Remote Talent?</strong>
+          <span class="text-base pcTab:hidden">
+            See How Our Process Works
+          </span>
+          <span class="hidden pcTab:block">
+            See How Our Process Works
+          </span>
+        </h2>
+
+      </div>
+
+      <div class="sectionContent ">
+
+        <div class="hidden grid-cols-4 pcTab:grid desktop">
+
+          <div class="col-span-1 mb-4 info1">
+             <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Discovery<br> Phase:
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                We define the ideal remote talent by aligning with your goals, culture, and tech needs
+             </p>
+          </div>
+          <div class="col-span-1 col-start-3 info2">
+            <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                 Final Candidate<br> Presentation:
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                We deliver pre-vetted remote candidates with clear, detailed profiles to streamline your hiring decisions
+             </p>
+          </div>
+          <div class="col-span-4 my-4 imageSteps">
+              <img src="{{ get_file('/images/step_talent_desktop.svg') }}" alt="choose talent steps mobile">
+          </div>
+          <div class="col-span-1 col-start-2 info3 ">
+           <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Talent Matching Phase:
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                We screen remote talent with interviews and tests to ensure top-qualified candidates for your team
+             </p>
+          </div>
+          <div class="col-span-1 col-start-4 info4">
+             <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Onboarding Meeting:
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                We ensure smooth remote hires with onboarding and ongoing support for seamless integration
+             </p>
+          </div>
+
+        </div>
+        <div class="relative flex flex-row items-center justify-center gap-6 mx-auto w-fit pcTab:hidden mobile">
+
+          <div class="absolute top-0 bottom-0 h-full -left-6 sm:left-0 sm:relative imageSteps">
+            <img class="mx-auto " src="{{ get_file('/images/step_talent_mobile.svg') }}" alt="choose talent steps mobile">
+          </div>
+          <div class="relative flex flex-col justify-between gap-4 pl-16 sm:pl-0 info">
+            <div class="info1">
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Discovery Phase:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                We define the ideal remote<br>
+                talent by aligning with your<br>
+                goals, culture, and tech needs
+             </p>
+            </div>
+            <div class="info2">
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Talent<br>
+                Matching Phase:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                We screen remote talent with<br>
+                interviews and tests to ensure<br>
+                top-qualified candidates<br>
+                for your team
+             </p>
+            </div>
+            <div class="info3">
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Final Candidate<br>
+                Presentation:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                We deliver pre-vetted remote<br>
+                candidates with clear, detailed<br>
+                profiles to streamline your<br>
+                hiring decisions
+             </p>
+            </div>
+            <div class="info4">
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+               Onboarding<br>
+               Meeting:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                We ensure smooth remote<br>
+                hires with onboarding and<br>
+                ongoing support for<br>
+                seamless integration
+             </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
