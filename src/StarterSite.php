@@ -58,6 +58,7 @@ class StarterSite extends Site
       wp_enqueue_style('styles', THEME_DIRECTORY_URI . '/assets/css/main.css', false, THEME_VERSION);
       wp_enqueue_style('tailwind', THEME_DIRECTORY_URI . '/assets/css/tailwind.css', false, THEME_VERSION);
       wp_enqueue_style('aos_css', THEME_DIRECTORY_URI . '/resources/css/vendors/aos.css', false, THEME_VERSION);
+      wp_enqueue_style('animate_css', THEME_DIRECTORY_URI . '/resources/css/vendors/animate.css', false, THEME_VERSION);
 
       wp_enqueue_script('alpinejs', THEME_DIRECTORY_URI . '/resources/js/vendors/alpinejs.min.js', ['jquery'], THEME_VERSION, true);
       wp_enqueue_script('aos_js', THEME_DIRECTORY_URI . '/resources/js/vendors/aos.js', ['jquery'], THEME_VERSION, true);
