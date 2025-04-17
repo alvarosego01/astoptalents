@@ -1,7 +1,7 @@
 AOS.init({
   once: true,
-  disable: "phone",
-  duration: 500,
+  // disable: 'phone',
+  duration: 400,
   easing: "ease-out-cubic"
 });
 document.addEventListener("DOMContentLoaded", function() {
@@ -21,5 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
       lazyImageObserver.observe(lazyImage);
     });
   }
+});
+jQuery(document).ready(function() {
 });
 //# sourceMappingURL=scripts.js.map

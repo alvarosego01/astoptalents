@@ -1,10 +1,10 @@
 
 
 {% macro Component(param = {
-icon: '',
-title: '',
-desc: '',
-align: 'left'
+  icon: '',
+  title: '',
+  desc: '',
+  align: 'left'
 }) %}
 
 <div class="flex flex-col items-start justify-center gap-6 info">
@@ -17,7 +17,7 @@ align: 'left'
   {% endif %}
   <div class="flex flex-col gap-6 content">
     <h3 class="font-bold leading-tight title h3 text-darkBlue">
-      {{ param.title }}
+      {{ param.title | raw }}
     </h3>
     <p class="text-grayish">
       {{ param.desc | raw }}
