@@ -9,7 +9,7 @@
 <section class="relative overflow-hidden homeHeader homeSection_00">
 
   <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-    <div class="grid grid-cols-3 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="grid grid-cols-3 gap-10 pt-32 pb-12 pcTab:gap-0 md:pt-40 md:pb-16">
 
       <div
         class="flex flex-col items-start justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-left info">
@@ -21,21 +21,21 @@
             </div>
           </div>
         </div> #}
-        <h1 class="mb-6 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+        <h1 class="w-full mb-6 leading-normal text-center text-tealBlue pcTab:text-left h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
           <span class="text-darkBlue">
-            Hire Top Remote Talent <br>
+            Hire Top Remote Talent <br class="textBreak">
             in Latin America &
-          </span> <br>
+          </span> <br class="textBreak">
           Save Up 80%
         </h1>
-        <p class="mb-10 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
-          <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br>
-          AlphaScale Talent connects businesses with top-tier remote <br> professionals, offering a diverse talent pool
-          and cutting-edge <br> virtual office space technology.
+        <p class="w-full mb-10 text-xl text-center pcTab:text-left text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br class="textBreak">
+          AlphaScale Talent connects businesses with top-tier remote <br class="textBreak"> professionals, offering a diverse talent pool
+          and cutting-edge <br class="textBreak"> virtual office space technology.
         </p>
 
         <div
-          class="max-w-xs space-y-4 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
+          class="max-w-xs mx-auto space-y-4 pcTab:mx-0 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
           data-aos="zoom-out" data-aos-delay="200">
 
           <div>
@@ -59,9 +59,9 @@
 
       </div>
 
-      <div class="relative col-span-3 mx-auto text-center pcTab:col-span-1 md:right-16 md:mx-0 md:text-left image " data-aos="zoom-out"
+      <div class="relative col-span-3 mx-auto text-center pcTab:col-span-1 pcTab:right-0 lg:right-16 md:mx-0 md:text-left image " data-aos="zoom-out"
         data-aos-delay="250">
-        <img class="mx-auto md:max-w-none" src="{{ get_file('/images/talent_header.svg') }}">
+        <img class="mx-auto h-[400px] lg:h-auto md:max-w-none" src="{{ get_file('/images/talent_header.svg') }}">
 
       </div>
 
@@ -201,7 +201,7 @@
     <div class="sectionTop">
 
       <h2 class="mx-auto mb-10 font-bold text-center h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
-        Scale Smarter: Tips, Trends & Talent Strategies
+        Scale Smarter: Tips, <br class="mobileBreak"> Trends & Talent Strategies
       </h2>
 
       <p class="mb-10 text-base text-center text-grayish" data-aos="zoom-out" data-aos-delay="150">
@@ -213,13 +213,13 @@
 
     <div class="sectionContent">
 
-      <div class="grid grid-cols-1 gap-20 mb-14 cards md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-10 pcTab:gap-20 mb-14 cards md:grid-cols-3">
 
         <div class="col-span-1 card" data-aos="zoom-out" data-aos-delay="100">
           {{
           PostCard1({
           src: get_file('/images/card_1.png'),
-          title: 'How to hire remote talent in LATAM'
+          title: 'How to hire remote talent<br class="mobileBreak"> in LATAM'
           })
           }}
         </div>
@@ -227,7 +227,7 @@
           {{
           PostCard1({
           src: get_file('/images/card_2.png'),
-          title: 'The benefits of Remote Talent Acquisition'
+          title: 'The benefits of Remote<br class="mobileBreak"> Talent Acquisition'
           })
           }}
         </div>
@@ -235,7 +235,7 @@
           {{
           PostCard1({
           src: get_file('/images/card_3.png'),
-          title: 'Beyond Borders: The Rise of Global Remote '
+          title: 'Beyond Borders:<br class="mobileBreak"> The Rise of Global Remote '
           })
           }}
         </div>
@@ -278,13 +278,13 @@
         </h2>
       </div>
       <div class="sectionContent">
-          <div class="grid grid-cols-1 gap-6 mb-14 cards sm:grid-cols-2 md:grid-cols-4">
+          <div class="grid grid-cols-1 gap-6 mb-14 cards sm:grid-cols-2 pcTab:grid-cols-4">
 
-            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            <div class="flex flex-col mx-auto overflow-hidden border card bg-mainWhite border-mainWhite w-fit md:w-full"
             data-aos="zoom-out" data-aos-delay="150"
             >
               <div class="image">
-                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results01.png') }}">
+                <img class="block object-cover w-auto h-52 md:h-full md:w-full md:max-w-none" src="{{ get_file('/images/talents_results01.png') }}">
               </div>
           <div class="flex items-center justify-center h-20 px-1 py-6 content">
                 <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
@@ -293,11 +293,11 @@
               </div>
             </div>
 
-            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            <div class="flex flex-col mx-auto overflow-hidden border card bg-mainWhite border-mainWhite w-fit md:w-full"
             data-aos="zoom-out" data-aos-delay="200"
             >
               <div class="image">
-                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results02.png') }}">
+                <img class="block object-cover w-auto h-52 md:h-auto md:w-full md:max-w-none" src="{{ get_file('/images/talents_results02.png') }}">
               </div>
           <div class="flex items-center justify-center h-20 px-1 py-6 content">
                 <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
@@ -306,11 +306,11 @@
               </div>
             </div>
 
-            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            <div class="flex flex-col mx-auto overflow-hidden border card bg-mainWhite border-mainWhite w-fit md:w-full"
             data-aos="zoom-out" data-aos-delay="250"
             >
               <div class="image">
-                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results03.png') }}">
+                <img class="block object-cover w-auto h-52 md:h-auto md:w-full md:max-w-none" src="{{ get_file('/images/talents_results03.png') }}">
               </div>
            <div class="flex items-center justify-center h-20 px-1 py-6 content">
                 <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">
@@ -319,11 +319,11 @@
               </div>
             </div>
 
-            <div class="flex flex-col overflow-hidden border card bg-mainWhite border-mainWhite"
+            <div class="flex flex-col mx-auto overflow-hidden border card bg-mainWhite border-mainWhite w-fit md:w-full"
             data-aos="zoom-out" data-aos-delay="300"
             >
               <div class="image">
-                <img class="block object-cover w-full h-full md:max-w-none" src="{{ get_file('/images/talents_results04.png') }}">
+                <img class="block object-cover w-auto h-52 md:h-auto md:w-full md:max-w-none" src="{{ get_file('/images/talents_results04.png') }}">
               </div>
               <div class="flex items-center justify-center h-20 px-1 py-6 content">
                 <h3 class="text-xl font-bold leading-normal text-center text-darkBlue">

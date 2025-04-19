@@ -25,3 +25,11 @@
 [x-cloak=""] {
     display: none;
 }
+
+br.textBreak {
+	@apply hidden sm:block
+}
+
+br.mobileBreak {
+  @apply block md:hidden
+}

@@ -12,9 +12,9 @@
 data-aos="zoom-out" data-aos-delay="250"
 >
 
-  <div class="absolute top-0 bottom-0 left-0 right-0 z-10 grid grid-cols-1 gap-16 controls md:grid-cols-2">
+  <div class="absolute top-0 bottom-0 left-0 right-0 z-10 grid grid-cols-1 gap-16 controls md:grid-cols-2 mt-auto pcTab:mt-0 h-[300px] sm:h-[500px]">
 
-    <div class="relative col-span-1 controlsContent">
+    <div class="relative col-span-2 pcTab:col-span-1 controlsContent">
 
       <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-row justify-between w-full h-10 my-auto controls">
 
@@ -28,8 +28,8 @@ data-aos="zoom-out" data-aos-delay="250"
         </div>
 
       </div>
-      <div class="absolute w-full bottom-6 bullets">
-        <div class="flex items-center justify-center w-full h-4 gap-4 bulletsContent">
+      <div class="absolute w-full bottom-16 bullets">
+        <div class="flex items-center justify-center w-full h-4 gap-3 bulletsContent">
           {# <div class="w-2 h-2 rounded-full bg-darkBlue "></div>
           <div class="w-2 h-2 rounded-full bg-mainWhite"></div> #}
         </div>
@@ -40,12 +40,13 @@ data-aos="zoom-out" data-aos-delay="250"
   </div>
 
   {% for slide in slides %}
-    <div class="grid grid-cols-1 gap-16 elementSlider md:grid-cols-2">
 
-    <div class="relative col-span-1 image">
+  <div class="flex flex-col-reverse gap-10 lg:gap-16 pcTab:grid pcTab:grid-cols-2 elementSlider">
 
+    <div class="relative image">
       <div class="overflow-hidden rounded-[60px] imageContent ">
-        <img class="object-cover w-full h-full mx-auto animate__animated animate__pulse" src="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
+        <img class="object-cover mx-auto h-[300px] sm:h-[500px] pcTab:w-full pcTab:h-full animate__animated animate__pulse" src="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
+
       </div>
 
       <div class="absolute flex items-center justify-center w-full -bottom-24 buttonSection animate__animated animate__pulse">
@@ -55,24 +56,26 @@ data-aos="zoom-out" data-aos-delay="250"
           url: slide.button.url,
           type: 'primary'
           }) }}
+
         </div>
+
       </div>
 
     </div>
-      <div class="flex items-center info">
 
-        {{ IconCard_1({
-          icon: slide.info.icon | raw,
-          title: slide.info.title,
-          desc: slide.info.desc,
-        }) }}
+    <div class="flex items-center justify-start info">
+      {{ IconCard_1({
+        icon: slide.info.icon | raw,
+        title: slide.info.title,
+        desc: slide.info.desc,
+      }) }}
 
-      </div>
     </div>
+
+  </div>
+
+
   {% endfor %}
-
-</div>
-
   {% endif %}
 
     <script>
@@ -106,7 +109,7 @@ data-aos="zoom-out" data-aos-delay="250"
         function showSlide(idx) {
           console.log('showSlide', showSlide);
           slides.forEach((slide, i) => {
-            slide.classList.toggle('hidden', i !== idx);
+            slide.classList.toggle('hide', i !== idx);
           });
           bullets.forEach((b, i) => {
             b.classList.toggle('bg-darkBlue', i === idx);
