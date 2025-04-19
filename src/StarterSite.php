@@ -104,7 +104,6 @@ class StarterSite extends Site
     $context['server_uri'] = THEME_DIRECTORY_URI;
 
     $context['theme_settings'] = (new CarbonFields())->load_theme_settings('theme-settings');
-
     $context['header_menu_primary'] = (new Menus_Handler())->get_menu_items('navbar_primary');
     $context['header_menu_right'] = (new Menus_Handler())->get_menu_items('navbar_primary_right');
     $context['footer_menu'] = (new Menus_Handler())->get_menu_items('footer');
@@ -280,6 +279,7 @@ class StarterSite extends Site
 
     $twig->addFunction(new Twig\TwigFunction('get_color', [new generalFunctions(), 'get_color']));
     $twig->addFunction(new Twig\TwigFunction('get_file', [new generalFunctions(), 'get_file']));
+    $twig->addFunction(new Twig\TwigFunction('get_wp_img', [new generalFunctions(), 'get_wp_img']));
     $twig->addFunction(new Twig\TwigFunction('print_r', [new generalFunctions(), 'print_r']));
 
 

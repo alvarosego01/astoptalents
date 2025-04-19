@@ -51,7 +51,7 @@ class HomeController extends PageBaseController
       [
         "title" => "Andrés Valverde",
         "subTitle" => "developer",
-        "desc" => 'Focused on clean code, scalable solutions,<br class="textBreak"> and efficient web & app development,<br class="textBreak">',
+        "desc" => 'Focused on clean code, scalable solutions, and efficient web & app development,',
         "img" => $this->general_functions->get_file('/images/talent_person.png'),
         "subTag" => '$900 / month'
       ],
