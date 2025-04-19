@@ -367,14 +367,15 @@
 
       <div class="flex justify-center info">
 
-        <div class="grid grid-cols-1 gap-x-10 md:gap-x-44 gap-y-16 mb-14 cards md:grid-cols-2 ">
+        <div class="grid grid-cols-1 gap-x-6 pcTab:gap-x-36 gap-y-14 mb-14 cards pcTab::grid-cols-2 ">
 
           <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="200">
             {{
               IconCard_1({
               icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_globe.png') ~ "'>",
               title: 'Time Zone Alignment:',
-              desc: 'Your Latin American team members <br> can collaborate seamlessly with you <br> throughout the workday.',
+              desc: 'Your Latin American team members <br class="textBreak"> can collaborate seamlessly with you <br class="textBreak"> throughout the workday.',
+              centerResponsive: true,
               })
             }}
           </div>
@@ -383,7 +384,8 @@
               IconCard_1({
               icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_english.png') ~ "'>",
               title: 'Fluent English:',
-              desc: 'Each candidate is screened for strong <br> English skills to ensure immediate,<br> effective contribution',
+              desc: 'Each candidate is screened for strong <br class="textBreak"> English skills to ensure immediate,<br class="textBreak"> effective contribution',
+              centerResponsive: true,
               })
             }}
           </div>
@@ -392,7 +394,8 @@
               IconCard_1({
               icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_together.png') ~ "'>",
               title: 'Cultural Alignment:',
-              desc: 'We match you with qualified remote talent from <br> Colombia, Venezuela, and Argentina that fits your <br> culture and works seamlessly from day one.',
+              desc: 'We match you with qualified remote talent from <br class="textBreak"> Colombia, Venezuela, and Argentina that fits your <br class="textBreak"> culture and works seamlessly from day one.',
+              centerResponsive: true,
               })
             }}
           </div>
@@ -401,7 +404,8 @@
               IconCard_1({
               icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_budget.png') ~ "'>",
               title: 'Significant Savings:',
-              desc: 'Latin American salaries are 50–80% lower than <br> U.S. equivalents. Build a World-Class team with <br> top 1% talent without stretching your budget.',
+              desc: 'Latin American salaries are 50–80% lower than <br class="textBreak"> U.S. equivalents. Build a World-Class team with <br class="textBreak"> top 1% talent without stretching your budget.',
+              centerResponsive: true,
               })
             }}
           </div>

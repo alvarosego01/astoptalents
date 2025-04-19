@@ -27,7 +27,7 @@
 }
 
 br.textBreak {
-	@apply hidden sm:block
+	@apply hidden md:block
 }
 
 br.mobileBreak {
