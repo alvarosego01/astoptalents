@@ -34,24 +34,4 @@ Timber::$dirname = [
   'src/views/pages'
 ];
 
-// Cargar controladores automáticamente
-add_action('wp', function() {
-    if (is_page()) {
-        $page_slug = get_post_field('post_name');
-        $controller_path = get_template_directory() . "/src/views/pages/{$page_slug}/controller.php";
-
-        if (file_exists($controller_path)) {
-            require_once($controller_path);
-
-            foreach (get_declared_classes() as $class) {
-                if (strpos($class, 'Controller') !== false && stripos($class, $page_slug) !== false) {
-                    $controller = new $class();
-                    $controller->render();
-                    exit();
-                }
-            }
-        }
-    }
-});
-
 new StarterSite();

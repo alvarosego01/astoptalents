@@ -17,7 +17,7 @@ class StarterSite extends Site
 
   public function __construct()
   {
-
+    $this->init_templatePages();
     add_action('after_setup_theme', array($this, 'theme_supports'));
     add_action('after_setup_theme', array($this, 'portfolio_theme_setup'));
     add_action('init', array($this, 'register_post_types'));
@@ -45,7 +45,52 @@ class StarterSite extends Site
   //     (new Custom_PostTypes())->__init();
   // }
 
+  private function init_templatePages(){
+    add_action('after_setup_theme', function() {
 
+    $base = rtrim( THEME_ROOT_PATH, '/\\' ) . '/src/views/pages';
+
+    // 1) Incluye todos los controller.php
+    foreach ( glob( "{$base}/*/controller.php" ) as $controller_file ) {
+        require_once $controller_file;
+    }
+
+    // 2) Construye el array [ template_file => template_name ]
+    $templates = [];
+    foreach ( get_declared_classes() as $class ) {
+        if ( is_subclass_of( $class, 'App\\Classes\\PageBaseController' ) ) {
+            $templates += $class::get_page_template();
+        }
+    }
+
+    // 3) Registra las plantillas en el admin de WP
+    add_filter('theme_page_templates', function( $page_templates ) use ( $templates ) {
+        return array_merge( $page_templates, $templates );
+    });
+
+    // 4) Al cargar el front, detecta si la página usa una de tus plantillas
+    add_filter('template_include', function( $template ) use ( $templates ) {
+        if ( is_page() ) {
+            $chosen = get_page_template_slug( get_queried_object_id() );
+            if ( $chosen && isset( $templates[ $chosen ] ) ) {
+                // Busca qué controller tiene ese template_file
+                foreach ( get_declared_classes() as $class ) {
+                    if (
+                        is_subclass_of( $class, 'App\\Classes\\PageBaseController' )
+                        && $class::$template_file === $chosen
+                    ) {
+                        // Instancia y renderiza con Timber + Twig
+                        (new $class())->render();
+                        exit; // ya envió la salida
+                    }
+                }
+            }
+        }
+        return $template;
+    });
+});
+
+  }
 
   private function register_scripts_styles()
   {
