@@ -2,7 +2,10 @@
 
 // use App\Classes\CarbonFields;
 // use App\Classes\Custom_PostTypes;
+
+use App\Classes\CarbonFields;
 use App\Classes\generalFunctions;
+use App\Classes\Menus_Handler;
 use Timber\Site;
 use Timber\Timber;
 
@@ -99,6 +102,13 @@ class StarterSite extends Site
     $context['server_name'] = (new generalFunctions())->get_TypeUrl();
 
     $context['server_uri'] = THEME_DIRECTORY_URI;
+
+    $context['theme_settings'] = (new CarbonFields())->load_theme_settings('theme-settings');
+
+    $context['header_menu_primary'] = (new Menus_Handler())->get_menu_items('navbar_primary');
+    $context['header_menu_right'] = (new Menus_Handler())->get_menu_items('navbar_primary_right');
+    $context['footer_menu'] = (new Menus_Handler())->get_menu_items('footer');
+    $context['menu_socials'] = (new Menus_Handler())->get_menu_items('socials');
 
     return $context;
   }
@@ -303,5 +313,4 @@ class StarterSite extends Site
   {
     load_theme_textdomain(THEME_NAME, get_template_directory() . '/languages');
   }
-
 }
