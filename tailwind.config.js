@@ -91,6 +91,10 @@ module.exports = {
         widest: '0.4em',
       },
     },
+    safelist: [
+      '.textBreak',
+      '.mobileBreak',
+    ],
   },
   plugins: [
     // eslint-disable-next-line global-require
