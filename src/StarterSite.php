@@ -29,17 +29,17 @@ class StarterSite extends Site
     add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
 
     // $this->register_custom_postTypes();
-    // $this->register_meta_fields();
+    $this->register_meta_fields();
 
     $this->register_scripts_styles();
 
     parent::__construct();
   }
 
-  // private function register_meta_fields()
-  // {
-  //     (new CarbonFields())->__init();
-  // }
+  private function register_meta_fields()
+  {
+      (new CarbonFields())->__init();
+  }
 
   // private function register_custom_postTypes(){
   //     (new Custom_PostTypes())->__init();
