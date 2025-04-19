@@ -4,22 +4,38 @@
   icon: '',
   title: '',
   desc: '',
-  align: 'left'
+  align: 'left',
+  centerResponsive: false,
 }) %}
 
-<div class="flex flex-col items-start justify-center gap-6 info">
+{% if param.align == '' %}
+  {% set align = 'left' %}
+{% else %}
+  {% set align = param.align %}
+{% endif %}
+
+{% if param.centerResponsive == true %}
+  {% set centerParent = 'items-center pcTab:items-' ~ align %}
+  {% set centerTexts = 'text-center pcTab:text-' ~ align %}
+  {% else %}
+  {% set centerParent = 'items-' ~ align %}
+  {% set centerTexts = 'text-' ~ align %}
+
+{% endif %}
+
+<div class="flex flex-col justify-center gap-6 {{ centerParent }} info">
 
   {% if param.icon != '' %}
-  <div class="icon">
+  <div class="flex pcTab:w-full icon {{ centerParent }}">
     {# <img class="mx-auto md:max-w-none" src="{{ icon }}"> #}
     {{ param.icon | raw }}
   </div>
   {% endif %}
   <div class="flex flex-col gap-6 content">
-    <h3 class="font-bold leading-tight title h3 text-darkBlue">
+    <h3 class="font-bold leading-tight {{ centerTexts }} title h3 text-darkBlue">
       {{ param.title | raw }}
     </h3>
-    <p class="text-grayish">
+    <p class="text-grayish {{ centerTexts }}">
       {{ param.desc | raw }}
     </p>
 
