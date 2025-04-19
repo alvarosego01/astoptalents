@@ -44,8 +44,7 @@ add_action('wp', function() {
             require_once($controller_path);
 
             foreach (get_declared_classes() as $class) {
-                if (strpos($class, 'Controller') !== false &&
-                    stripos($class, $page_slug) !== false) {
+                if (strpos($class, 'Controller') !== false && stripos($class, $page_slug) !== false) {
                     $controller = new $class();
                     $controller->render();
                     exit();
