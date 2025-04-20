@@ -1,119 +1,71 @@
+{% from 'components/buttons/Button.twig' import Component as Button %}
+
+<footer class="pt-24 pb-4 bg-darkBlue">
+  <div class="max-w-6xl px-4 pb-10 mx-auto border-b sm:px-6 border-mainWhite">
+
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-12 ">
+
+      <div class="col-span-1 sm:pb-10 firstColumn sm:col-span-6">
+        <div class="mb-4 logo">
+          <img class="w-auto h-24"  src="{{ get_file('/images/logos/logo_alpha.svg') }}" alt="logo alphascale">
+        </div>
+        <div class="flex flex-col gap-6 newsLetter">
+          <span class="text-base text-mainWhite">
+            Global Talent Acquisition Firm
+          </span>
+
+          <div class="flex">
+            {{ Button({
+            text: "Free consultation",
+            url: "#0",
+            type: 'secondary'
+            }) }}
+          </div>
 
 
-      <footer>
-            <div class="max-w-6xl px-4 mx-auto sm:px-6">
+        </div>
+      </div>
+      <div class="col-span-1 firstColumn sm:col-span-3">
+        <h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
+          Menu
+        </h6>
+        <ul class="space-y-4 text-base">
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">About Us</a>
+          </li>
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Our Story</a>
+          </li>
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Work With Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-1 firstColumn sm:col-span-3">
+        <h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
+          Contact
+        </h6>
+        <ul class="space-y-4 text-base">
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">About Us</a>
+          </li>
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Our Story</a>
+          </li>
+          <li>
+            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Work With Us</a>
+          </li>
+        </ul>
+      </div>
 
-                <!-- Blocks -->
-                <div class="grid gap-8 py-8 sm:grid-cols-12 md:py-12">
+    </div>
+  </div>
+  <div class="flex items-center justify-center w-full max-w-6xl py-6 mx-auto rights">
+    <span class="w-full text-base text-center text-mainWhite">
+      © 2024 Your Company. All Rights Reserved.
+    </span>
+  </div>
 
-                    <!-- 1st block -->
-                    <div class="sm:col-span-12 lg:col-span-4 lg:max-w-xs">
-                        <div class="mb-2">
-                            <!-- Logo -->
-                            <a class="inline-flex" href="index.html" aria-label="Cruip">
-                                <svg class="w-8 h-8" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <radialGradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradientTransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo2-b">
-                                            <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%" />
-                                            <stop stop-color="#F472B6" stop-opacity=".876" offset="100%" />
-                                        </radialGradient>
-                                        <radialGradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradientTransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo2-d">
-                                            <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%" />
-                                            <stop stop-color="#D375C2" stop-opacity=".833" offset="50.358%" />
-                                            <stop stop-color="#FBCFE8" stop-opacity=".876" offset="100%" />
-                                        </radialGradient>
-                                        <path d="M12 32c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S0 8.373 0 15c0 4.418 4 10.085 12 17Z" id="logo2-a" />
-                                        <path d="M20 29c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S8 5.373 8 12c0 4.418 4 10.085 12 17Z" id="logo2-c" />
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <use fill="url(#logo2-b)" opacity=".64" transform="matrix(1 0 0 -1 0 35)" xlink:href="#logo2-a" />
-                                        <use fill="url(#logo2-d)" opacity=".961" xlink:href="#logo2-c" />
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="text-sm text-gray-600">
-                            <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Terms</a> · <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <!-- 2nd block -->
-                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="mb-2 text-xs font-semibold text-gray-200 uppercase">Products</h6>
-                        <ul class="space-y-2 text-sm">
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Neon Manage</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Neon Analyse</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Neon Launch</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Experimentation</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- 3rd block -->
-                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="mb-2 text-xs font-semibold text-gray-200 uppercase">Resources</h6>
-                        <ul class="space-y-2 text-sm">
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Blog</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Cheat Sheet</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Channel Partners</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Affiliate Program</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- 4th block -->
-                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="mb-2 text-xs font-semibold text-gray-200 uppercase">Compare</h6>
-                        <ul class="space-y-2 text-sm">
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Session Recording</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Feature Flags</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Heatmaps</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Correlation Analysis</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- 5th block -->
-                    <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="mb-2 text-xs font-semibold text-gray-200 uppercase">Company</h6>
-                        <ul class="space-y-2 text-sm">
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">About Us</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Our Story</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-400 transition duration-150 ease-in-out hover:text-blue-500" href="#0">Work With Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </footer>
-
+</footer>
 
 {{ function("wp_footer") }}

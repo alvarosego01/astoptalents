@@ -81,4 +81,10 @@ class generalFunctions
     add_action('template_redirect', [$this, 'start_buffer']);
     add_action('shutdown', [$this, 'end_buffer']);
   }
+
+  function print_r($content)
+  {
+    print_r($content);
+  }
+
 }

@@ -2,7 +2,10 @@
 
 // use App\Classes\CarbonFields;
 // use App\Classes\Custom_PostTypes;
+
+use App\Classes\CarbonFields;
 use App\Classes\generalFunctions;
+use App\Classes\Menus_Handler;
 use Timber\Site;
 use Timber\Timber;
 
@@ -14,7 +17,7 @@ class StarterSite extends Site
 
   public function __construct()
   {
-
+    $this->init_templatePages();
     add_action('after_setup_theme', array($this, 'theme_supports'));
     add_action('after_setup_theme', array($this, 'portfolio_theme_setup'));
     add_action('init', array($this, 'register_post_types'));
@@ -26,23 +29,71 @@ class StarterSite extends Site
     add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
 
     // $this->register_custom_postTypes();
-    // $this->register_meta_fields();
+    $this->register_meta_fields();
 
     $this->register_scripts_styles();
 
     parent::__construct();
   }
 
-  // private function register_meta_fields()
-  // {
-  //     (new CarbonFields())->__init();
-  // }
+  private function register_meta_fields()
+  {
+      (new CarbonFields())->__init();
+  }
 
   // private function register_custom_postTypes(){
   //     (new Custom_PostTypes())->__init();
   // }
 
+  private function init_templatePages()
+  {
+    add_action('after_setup_theme', function () {
 
+      $base = rtrim(THEME_ROOT_PATH, '/\\') . '/src/views/pages';
+
+      // 1) Incluye todos los controller.php
+      $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($base));
+      foreach ($iterator as $file) {
+        if ($file->isFile() && $file->getFilename() === 'controller.php') {
+          require_once $file->getPathname();
+        }
+      }
+
+      // 2) Construye el array [ template_file => template_name ]
+      $templates = [];
+      foreach (get_declared_classes() as $class) {
+        if (is_subclass_of($class, 'App\\Classes\\PageBaseController')) {
+          $templates += $class::get_page_template();
+        }
+      }
+
+      // 3) Registra las plantillas en el admin de WP
+      add_filter('theme_page_templates', function ($page_templates) use ($templates) {
+        return array_merge($page_templates, $templates);
+      });
+
+      // 4) Al cargar el front, detecta si la página usa una de tus plantillas
+      add_filter('template_include', function ($template) use ($templates) {
+        if (is_page()) {
+          $chosen = get_page_template_slug(get_queried_object_id());
+          if ($chosen && isset($templates[$chosen])) {
+            // Busca qué controller tiene ese template_file
+            foreach (get_declared_classes() as $class) {
+              if (
+                is_subclass_of($class, 'App\\Classes\\PageBaseController')
+                && $class::$template_file === $chosen
+              ) {
+                // Instancia y renderiza con Timber + Twig
+                (new $class())->render();
+                exit; // ya envió la salida
+              }
+            }
+          }
+        }
+        return $template;
+      });
+    });
+  }
 
   private function register_scripts_styles()
   {
@@ -58,6 +109,7 @@ class StarterSite extends Site
       wp_enqueue_style('styles', THEME_DIRECTORY_URI . '/assets/css/main.css', false, THEME_VERSION);
       wp_enqueue_style('tailwind', THEME_DIRECTORY_URI . '/assets/css/tailwind.css', false, THEME_VERSION);
       wp_enqueue_style('aos_css', THEME_DIRECTORY_URI . '/resources/css/vendors/aos.css', false, THEME_VERSION);
+      wp_enqueue_style('animate_css', THEME_DIRECTORY_URI . '/resources/css/vendors/animate.css', false, THEME_VERSION);
 
       wp_enqueue_script('alpinejs', THEME_DIRECTORY_URI . '/resources/js/vendors/alpinejs.min.js', ['jquery'], THEME_VERSION, true);
       wp_enqueue_script('aos_js', THEME_DIRECTORY_URI . '/resources/js/vendors/aos.js', ['jquery'], THEME_VERSION, true);
@@ -98,6 +150,12 @@ class StarterSite extends Site
     $context['server_name'] = (new generalFunctions())->get_TypeUrl();
 
     $context['server_uri'] = THEME_DIRECTORY_URI;
+
+    $context['theme_settings'] = (new CarbonFields())->load_theme_settings('theme-settings');
+    $context['header_menu_primary'] = (new Menus_Handler())->get_menu_items('navbar_primary');
+    $context['header_menu_right'] = (new Menus_Handler())->get_menu_items('navbar_primary_right');
+    $context['footer_menu'] = (new Menus_Handler())->get_menu_items('footer');
+    $context['menu_socials'] = (new Menus_Handler())->get_menu_items('socials');
 
     return $context;
   }
@@ -269,6 +327,8 @@ class StarterSite extends Site
 
     $twig->addFunction(new Twig\TwigFunction('get_color', [new generalFunctions(), 'get_color']));
     $twig->addFunction(new Twig\TwigFunction('get_file', [new generalFunctions(), 'get_file']));
+    $twig->addFunction(new Twig\TwigFunction('get_wp_img', [new generalFunctions(), 'get_wp_img']));
+    $twig->addFunction(new Twig\TwigFunction('print_r', [new generalFunctions(), 'print_r']));
 
 
     // $twig->addFunction(new Twig\TwigFunction('__', function ($text) {
@@ -301,5 +361,4 @@ class StarterSite extends Site
   {
     load_theme_textdomain(THEME_NAME, get_template_directory() . '/languages');
   }
-
 }
