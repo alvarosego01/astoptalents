@@ -8,14 +8,8 @@
 <!-- Hero -->
 <section class="relative mb-20 overflow-hidden homeHeader bg-lightBlue homeSection_00">
 
-  <!-- Illustration -->
-  {# <div class="absolute -translate-x-1/2 pointer-events-none left-1/2" aria-hidden="true">
-    <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-
-  </div> #}
-
   <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-    <div class="grid grid-cols-3 pt-32 pb-12 md:pt-52 md:pb-20">
+    <div class="grid grid-cols-3 pt-32 pb-20 md:pt-52 ">
 
       <!-- Hero content -->
       <div
@@ -36,7 +30,7 @@
           </span> <br>
           Save Up 80%
         </h1>
-        <p class="w-full mb-10 text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
+        <p class="w-full text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
           <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br>
           AlphaScale Talent connects businesses with top-tier remote <br> professionals, offering a diverse talent pool
           and cutting-edge <br> virtual office space technology.
@@ -60,6 +54,23 @@
         title: 'Top 1% of Talent<br> or sit, amet consect',
         desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br class="textBreak" > Aspernatur dolorum non dolores, neque libero ad perferendis commodi.<br><br> Tenetur veritatis perspiciatis excepturi maiores, eos voluptas<br class="textBreak" > pariatur voluptatum perferendis cupiditate autem dolorum?',
         side: 'left'
+      })
+     }}
+
+  </div>
+
+</section>
+<section class="mb-20 aboutSection_02">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    {{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'talents_results01',
+        title: 'Top 1% of Talent<br> or sit, amet consect',
+        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br class="textBreak" > Aspernatur dolorum non dolores, neque libero ad perferendis commodi.<br><br> Tenetur veritatis perspiciatis excepturi maiores, eos voluptas<br class="textBreak" > pariatur voluptatum perferendis cupiditate autem dolorum?',
+        side: 'right'
       })
      }}
 
