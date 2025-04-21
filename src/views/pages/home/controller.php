@@ -5,7 +5,7 @@ use App\Classes\generalFunctions;
 
 class HomeController extends PageBaseController
 {
-  protected $view = 'home/view.twig';
+  protected $view = 'home/home-view.twig';
   public static string $template_file = 'template-home.php';
   public static string $template_name = 'Page - Home';
 
