@@ -18,11 +18,14 @@
 
     {% if side == 'left' %}
 
-      <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image">
-          <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[60px]" src="{{ param.image }}" alt="{{ param.alt }}">
+      <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image"
+      data-aos="zoom-out" data-aos-delay="100"
+      >
+          <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
       </div>
 
-      <div class="flex items-center justify-center col-span-2 pcTab:col-span-1 pcTab:pr-8 info lg:pr-14">
+      <div class="flex items-center justify-center col-span-2 pcTab:col-span-1 pcTab:pr-8 info lg:pr-14"
+      data-aos="zoom-out" data-aos-delay="150">
         {{
           IconCard_1({
             icon: param.icon | raw,
@@ -36,7 +39,9 @@
     {% endif %}
     {% if side == 'right' %}
 
-      <div class="flex items-center justify-center col-span-2 pcTab:col-span-1 info pcTab:pl-8 lg:pl-14">
+      <div class="flex items-center justify-center col-span-2 pcTab:col-span-1 info pcTab:pl-8 lg:pl-14"
+      data-aos="zoom-out" data-aos-delay="100"
+      >
         {{
           IconCard_1({
             icon: param.icon | raw,
@@ -47,8 +52,10 @@
         }}
       </div>
 
-      <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image">
-        <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[60px]" src="{{ param.image }}" alt="{{ param.alt }}">
+      <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image"
+      data-aos="zoom-out" data-aos-delay="150"
+      >
+        <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
       </div>
 
     {% endif %}

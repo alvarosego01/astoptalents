@@ -2,6 +2,7 @@
 
 {% from 'components/buttons/Button.twig' import Component as Button %}
 {% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
+{% from 'components/content/BannerCta_1.twig' import Component as BannerCta_1 %}
 
 {% block content %}
 
@@ -73,6 +74,21 @@
         side: 'right'
       })
      }}
+
+  </div>
+
+</section>
+
+<section class="mb-20 homeSection_01">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    {{ BannerCta_1({
+      title: 'Pariatur voluptatum perferendis <br class="textBreak" >cupiditate autem',
+      desc: 'Lorem ipsum dolo em ipsum dolor sit, amet consectetur adipisicing elit.<br class="textBreak" > Aspernatur dolorum non dolores, neque libero ad perfere',
+      buttonText: 'View link',
+      buttonLink: '',
+    }) }}
 
   </div>
 
