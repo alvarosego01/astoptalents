@@ -3,6 +3,8 @@
 {% from 'components/buttons/Button.twig' import Component as Button %}
 {% from 'components/cards/PostCard_1.twig' import Component as PostCard1 %}
 {% from 'components/cards/IconCard_1.twig' import Component as IconCard_1 %}
+{% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
+{% from 'components/content/BannerCta_1.twig' import Component as BannerCta_1 %}
 
 {% block content %}
 
@@ -76,11 +78,11 @@
   </div>
 </section>
 
-<section class="mb-20 homeSection_01">
+<section class="mb-10 pcTab:mb-20 homeSection_01">
 
   <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
-    <div class="px-10 py-24 lg:px-20 rounded-xl contentCard bg-lightBlue">
+    <div class="px-10 py-24 lg:px-20 rounded-[50px] contentCard bg-lightBlue">
 
       <div class="mb-16 sectionTop">
 
@@ -198,11 +200,11 @@
 
 </section>
 
-<section class="mb-24 homeSection_05">
+<section class="mb-20 homeSection_05">
   {% include "pages/home/sections/ChooseSlider.twig" %}
 </section>
 
-<section class="mb-28 homeSection_02">
+<section class="mb-10 pcTab:mb-20 homeSection_02">
 
   <div class="max-w-6xl px-10 mx-auto sm:px-6">
 
@@ -286,12 +288,167 @@
 
 </section>
 
+<section class="mb-10 pcTab:mb-20 homeSection_06">
+
+    <div class="max-w-6xl px-10 mx-auto sm:px-6">
+
+    <div class="sectionTop">
+
+      <h2 class="mx-auto text-center mb-14 h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+        Why Latin America?
+      </h2>
+
+    </div>
+
+    <div class="sectionContent">
+
+      <div class="w-full mb-14 image"
+      data-aos="zoom-out" data-aos-delay="150" >
+        <img class="block object-cover rounded-[50px] overflow-hidden w-full h-auto md:h-[500px] " src="{{ get_file('/images/talent_team_banner_01.svg') }}">
+      </div>
+
+      <div class="flex justify-center info">
+
+        <div class="grid grid-cols-1 gap-x-6 pcTab:gap-x-36 gap-y-14 mb-14 cards pcTab:grid-cols-2 ">
+
+          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="200">
+            {{
+              IconCard_1({
+              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_globe.png') ~ "'>",
+              title: 'Seamless Collaboration <br class="textBreak">
+              Across Time Zones:',
+              desc: 'Latin American countries share similar time <br class="textBreak">
+              zones with the U.S., ensuring smooth real-time <br class="textBreak">
+              collaboration throughout the workday.',
+              align: 'left',
+              centerResponsive: true,
+
+              })
+            }}
+          </div>
+          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="250">
+            {{
+              IconCard_1({
+              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_english.png') ~ "'>",
+              title: 'Fluent English, <br class="textBreak">
+              Ready for Business:',
+              desc: 'All candidates are rigorously screened for excellent <br class="textBreak">
+              spoken and written English, ensuring they<br class="textBreak">
+              can contribute from day one.',
+              align: 'left',
+              centerResponsive: true,
+
+              })
+            }}
+          </div>
+          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="300">
+            {{
+              IconCard_1({
+              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_together.png') ~ "'>",
+              title: 'High-Quality Talent <br class="textBreak">
+              at a Fraction of the Cost:',
+              desc: 'Latin American salaries are 50–70% lower than U.S. <br class="textBreak">
+              equivalents, allowing you to build world-class teams <br class="textBreak">
+              without exceeding your budget.',
+              align: 'left',
+              centerResponsive: true,
+
+              })
+            }}
+          </div>
+          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="350">
+            {{
+              IconCard_1({
+              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_budget.png') ~ "'>",
+              title: 'Cultural Fit for <br class="textBreak">
+              Seamless Integration:',
+              desc: 'LATAM talent is highly experienced in remote work <br class="textBreak">
+              dynamics and adaptable to U.S. business culture,<br class="textBreak">
+              ensuring smooth team integration..
+              <br class="textBreak">
+              <br class="textBreak">
+              ',
+              align: 'left',
+              centerResponsive: true,
+
+              })
+            }}
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+      </div>
+
+</section>
+
+<section class="mb-10 pcTab:mb-20 homeSection_03">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+      <div class="sectionTop">
+
+      <h2 class="mx-auto text-center mb-14 h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+        Our Process: How We Bring <br class="textBreak">
+        Top Talent to Your U.S. <br class="textBreak">
+        Business
+      </h2>
+
+    </div>
+
+    <div class="flex flex-col gap-y-20 sectionContent">
+
+    {{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'step 1 process to bring talent',
+        title: 'Step 1: Describe the Role',
+        desc: "We take the time to understand your business and the role you're looking to fill. This allows us to create a tailored job listing that attracts the best candidates from our database of over 50,000 pre-vetted professionals.",
+        side: 'left'
+      })
+     }}
+    {{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'step 2 process to bring talent',
+        title: 'Step 2: We Search & Vet',
+        desc: "We leverage our network of over 40 million LATAM remote candidates to find the perfect match for your needs. Each candidate undergoes a rigorous vetting process, including interviews, English proficiency tests, and reference checks.",
+        side: 'right'
+      })
+     }}
+    {{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'step 3 process to bring talent',
+        title: 'Step 3: Hire & Onboarding',
+        desc: "Once you choose the perfect candidate, we ensure a smooth onboarding process. Our team takes care of all compliance, payroll, and tax documentation, ensuring your new hire is ready to go from day one.",
+        side: 'left'
+      })
+     }}
+      {{
+        ImageInfo_1({
+          image: get_file('/images/talents_results01.png'),
+          alt: 'step 4 process to bring talent',
+          title: 'Step 4: Ongoing Support & Satisfaction Guarantee',
+          desc: "We provide continuous support and a satisfaction guarantee. If your new hire isn’t the perfect fit, we offer a free replacement. We’re committed to ensuring your success every step of the way.",
+          side: 'right'
+        })
+      }}
+    </div>
+
+  </div>
+
+</section>
+
 <section class="mb-24 homeSection_03">
   {% include "pages/home/sections/TalentsSection.twig" %}
 </section>
 
 {#
-<section class="mb-20 homeSection_04">
+<section class="mb-10 pcTab:mb-20 homeSection_04">
 
   <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
@@ -383,90 +540,22 @@
 </section>
  #}
 
+ <section class="mb-10 pcTab:mb-20 homeSection_01">
 
-<section class="mb-20 homeSection_06">
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
-    <div class="max-w-6xl px-10 mx-auto sm:px-6">
+    {{ BannerCta_1({
+      title: 'Ready to Transform Your Remote Team?',
+      desc: '',
+      buttonText: 'Book a Free Consultation Now and Save!',
+      buttonLink: '',
+    }) }}
 
-    <div class="sectionTop">
-
-      <h2 class="mx-auto text-center mb-14 h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
-        Why Latin America?
-      </h2>
-
-    </div>
-
-    <div class="sectionContent">
-
-      <div class="w-full mb-14 image"
-      data-aos="zoom-out" data-aos-delay="150" >
-        <img class="block object-cover rounded-[50px] overflow-hidden w-full h-auto md:h-[500px] " src="{{ get_file('/images/talent_team_banner_01.svg') }}">
-      </div>
-
-      <div class="flex justify-center info">
-
-        <div class="grid grid-cols-1 gap-x-6 pcTab:gap-x-36 gap-y-14 mb-14 cards pcTab:grid-cols-2 ">
-
-          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="200">
-            {{
-              IconCard_1({
-              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_globe.png') ~ "'>",
-              title: 'Time Zone Alignment:',
-              desc: 'Your Latin American team members <br class="textBreak"> can collaborate seamlessly with you <br class="textBreak"> throughout the workday.',
-              align: 'left',
-              centerResponsive: true,
-
-              })
-            }}
-          </div>
-          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="250">
-            {{
-              IconCard_1({
-              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_english.png') ~ "'>",
-              title: 'Fluent English:',
-              desc: 'Each candidate is screened for strong <br class="textBreak"> English skills to ensure immediate,<br class="textBreak"> effective contribution',
-              align: 'left',
-              centerResponsive: true,
-
-              })
-            }}
-          </div>
-          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="300">
-            {{
-              IconCard_1({
-              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_together.png') ~ "'>",
-              title: 'Cultural Alignment:',
-              desc: 'We match you with qualified remote talent from <br class="textBreak"> Colombia, Venezuela, and Argentina that fits your <br class="textBreak"> culture and works seamlessly from day one.',
-              align: 'left',
-              centerResponsive: true,
-
-              })
-            }}
-          </div>
-          <div class="col-span-1 element" data-aos="zoom-out" data-aos-delay="350">
-            {{
-              IconCard_1({
-              icon: "<img class='w-auto h-14' src='" ~ get_file('/images/icons/icon_budget.png') ~ "'>",
-              title: 'Significant Savings:',
-              desc: 'Latin American salaries are 50–80% lower than <br class="textBreak"> U.S. equivalents. Build a World-Class team with <br class="textBreak"> top 1% talent without stretching your budget.
-              <br class="textBreak">
-              <br class="textBreak">
-              ',
-              align: 'left',
-              centerResponsive: true,
-
-              })
-            }}
-          </div>
-
-        </div>
-
-      </div>
-
-      </div>
-
-      </div>
+  </div>
 
 </section>
+
+
+
 
 {% endblock %}
