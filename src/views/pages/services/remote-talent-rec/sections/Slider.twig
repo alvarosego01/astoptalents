@@ -1,0 +1,26 @@
+
+{% from 'components/carousel/Carousel_1.twig' import Component as Carousel_1 %}
+
+<div class="max-w-6xl px-4 pb-20 mx-auto sm:px-6">
+
+  <div class="sectionTop">
+    <h2 class="mx-auto mb-10 font-bold text-center h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+      Our Remote Talent Recruitment Process
+    </h2>
+    <p class="mb-12 text-base text-center text-grayish" data-aos="zoom-out" data-aos-delay="150">
+      {# Connect with the top 1% of remote talent from Latin America,<br class="textBreak"> #}
+      {# and scale your U.S. business efficiently. #}
+      Our recruitment process ensures that you only hire professionals with <br class="textBreak">
+      the right skills and cultural fit for your business, from technology and sales to <br class="textBreak">
+      customer support and marketing.
+    </p>
+  </div>
+
+
+{% if slider|length > 0 %}
+  <div class="sectionContent">
+    {{ Carousel_1({
+      slides: slider|raw,
+    }) }}
+  </div>
+{% endif %}
