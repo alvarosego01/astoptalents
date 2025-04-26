@@ -1,0 +1,111 @@
+{% extends "base.twig" %}
+
+{% from 'components/buttons/Button.twig' import Component as Button %}
+{% from 'components/tables/Table_1.twig' import Component as Table_1 %}
+{% from 'components/content/BannerCta_1.twig' import Component as BannerCta_1 %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="relative mb-20 overflow-hidden homeHeader bg-lightBlue remoteTalentRec_00">
+
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-3 pt-32 pb-20 md:pt-52 ">
+
+      <!-- Hero content -->
+      <div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center md:mx-0 md:text-left info">
+
+        {# <div data-aos="zoom-out">
+          <div
+            class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
+            <div class="text-gray-400">
+              Lorem ipsum dolor sit amet consectetur
+            </div>
+          </div>
+        </div> #}
+        <h1 class="w-full mb-6 leading-normal text-center text-tealBlue h1 font-uncut-sans" data-aos="zoom-out"
+          data-aos-delay="100">
+          <span class="text-darkBlue">
+            Hire Top Talent from LATAM<br>
+          </span>
+          to Scale Your U.S. Business
+        </h1>
+        <p class="w-full mb-10 text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Astoptalent connects your U.S. business with the top 1% of remote talent from Latin America. <br
+            class="textBreak">
+          Save up to 80% in hiring costs while ensuring high-performance professionals in key <br class="textBreak">
+          sectors like technology, marketing, and customer service.
+        </p>
+
+
+        <div data-aos="zoom-out" data-aos-delay="200">
+          {{ Button({
+          text: "Book a Free Consultation Now and Save!",
+          url: "#0",
+          r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+          type: 'primary'
+          }) }}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mb-10 remoteTalentRec_01">
+  {% include "pages/services/remote-talent-rec/sections/slider.twig" %}
+</section>
+
+<section class="mb-10 pcTab:mb-20 remoteTalentRec_02">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    <div class="mb-16 sectionTop" data-aos="zoom-out" data-aos-delay="100">
+
+      <h2
+        class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+        <strong>
+          Pricing & Savings
+        </strong>
+      </h2>
+
+    </div>
+
+    <div class="mb-10" data-aos="zoom-out" data-aos-delay="150">
+
+      {{ Table_1({
+      table: table
+      }) }}
+    </div>
+
+    <p class="text-sm text-center text-grayish" data-aos="zoom-out" data-aos-delay="200">
+      These are just a few examples of the top roles we can provide. If you're looking for a specific <br
+        class="textBreak">
+      position not listed here, we can easily source and recruit the right talent for your business needs.<br
+        class="textBreak">
+      Just let us know what you're looking for, and we'll find the perfect match for your team.
+    </p>
+  </div>
+
+</section>
+
+ <section class="mb-10 pcTab:mb-20 remoteTalentRec_03">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6" data-aos="zoom-out" data-aos-delay="150">
+
+    {{ BannerCta_1({
+      title: 'Ready to Scale Your Business with Top Talent?',
+      desc: 'Contact Astoptalent today to connect with the best remote talent from Latin America.<br
+        class="textBreak"> Let us help you build the team that drives your business forward.',
+      buttonText: 'Book Your Free Consultation Now',
+      buttonLink: '',
+    }) }}
+
+  </div>
+
+</section>
+
+
+
+{% endblock %}
