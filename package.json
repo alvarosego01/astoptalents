@@ -10,7 +10,7 @@
     "type": "module",
     "config": {
         "browsersync": {
-            "proxy": "astoptalents.dev",
+            "proxy": "astoptalents.test",
             "port": 5500
         },
         "js": {
