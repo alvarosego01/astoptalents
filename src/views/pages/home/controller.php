@@ -79,9 +79,13 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_together.png') ."'>",
-          'title' => "Your Full-Service<br> Talent Partner",
-          'desc' => "We manage all aspects of hiring—including<br> recruiting, vetting, compliance, and global payroll<br>—allowing you to focus on business growth"
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_hands.png') ."'>",
+          'title' => "Access the Best Talent<br> from Latin America",
+          'desc' => "Astoptalent connects U.S. businesses with the top <br class='textBreak'>
+          1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
+          selection process ensures that only the most skilled <br class='textBreak'>
+          and qualified professionals are placed within your team, <br class='textBreak'>
+          empowering you to scale quickly with the best talent."
         ],
         'button' => [
           'text' => 'Learn more',
@@ -95,8 +99,12 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_laptop_person.png') ."'>",
-          'title' => "Immersive Virtual<br> Office Technology",
-          'desc' => "Boost remote work with virtual office spaces<br> designed for collaboration, productivity, and stronger<br> team connections"
+          'title' => "Save Up to 80%<br> on Hiring Costs",
+          'desc' => "By hiring remote talent from Latin America, U.S. <br class='textBreak'>
+          companies can save up to 80% in hiring and <br class='textBreak'>
+          operational costs. We provide you with high-caliber <br class='textBreak'>
+          professionals at a fraction of the cost, without <br class='textBreak'>
+          sacrificing quality or performance."
         ],
         'button' => [
           'text' => 'Learn more',
@@ -110,8 +118,12 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check_2.png') ."'>",
-          'title' => "Your Satisfaction,<br> Guaranteed",
-          'desc' => "Your success is our priority. If your hire doesn’t align<br> perfectly with your expectations, we’ll promptly<br> provide a replacement to ensure you’re fully satisfied."
+          'title' => "End-to-End Talent<br> Management",
+          'desc' => "Astoptalent manages the entire talent lifecycle for <br class='textBreak'>
+          your business. From recruiting top-tier candidates to <br class='textBreak'>
+          seamless onboarding, payroll management, and ongoing <br class='textBreak'>
+          support, we ensure that your remote teams are <br class='textBreak'>
+          always performing at their best."
         ],
         'button' => [
           'text' => 'Learn more',
@@ -125,8 +137,12 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check.png') ."'>",
-          'title' => "Clear and<br> Transparent Pricing",
-          'desc' => "Transparent pricing with no hidden costs ensures<br> risk-free hiring; you pay only when you find the<br>  ideal candidate."
+          'title' => "Seamless Team Collaboration<br> with Our Virtual Office",
+          'desc' => 'Our platform allows your remote team to interact <br class="textBreak">
+          and collaborate as if they were working in the same office. <br class="textBreak">
+          With avatar-based interaction and real-time communication, <br class="textBreak">
+          we create a fully immersive virtual workspace that enhances <br class="textBreak">
+          productivity and engagement.'
         ],
         'button' => [
           'text' => 'Learn more',
@@ -140,29 +156,33 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_search_people.png') ."'>",
-          'title' => "Access Trusted<br> Top Talent",
-          'desc' => "Access top LATAM professionals remotely &<br> cut hiring costs without compromising quality.."
+          'title' => "We Handle Compliance<br> and Payroll",
+          'desc' => 'Forget about the complexities of global payroll <br class="textBreak">
+          and compliance. Astoptalent ensures that all legal and <br class="textBreak">
+          tax requirements are met, so you can focus on growing <br class="textBreak">
+          your business without worrying about <br class="textBreak">
+          administrative burdens.'
         ],
         'button' => [
           'text' => 'Learn more',
           'link' => '/#'
         ]
       ],
-      [
-        'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_5.png'),
-          'alt' => 'Your full service',
-        ],
-        'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_protect.png') ."'>",
-          'title' => "No Compliance<br> Worries",
-          'desc' => "We manage all legal and compliance requirements,<br> strictly adhering to local employment regulations<br> across all operating countries"
-        ],
-        'button' => [
-          'text' => 'Learn more',
-          'link' => '/#'
-        ]
-      ],
+      // [
+      //   'image' => [
+      //     'src' => $this->general_functions->get_file('/images/slider_5.png'),
+      //     'alt' => 'Your full service',
+      //   ],
+      //   'info' => [
+      //     'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_protect.png') ."'>",
+      //     'title' => "No Compliance<br> Worries",
+      //     'desc' => "We manage all legal and compliance requirements,<br> strictly adhering to local employment regulations<br> across all operating countries"
+      //   ],
+      //   'button' => [
+      //     'text' => 'Learn more',
+      //     'link' => '/#'
+      //   ]
+      // ],
     );
 
     $this->add_to_context([
