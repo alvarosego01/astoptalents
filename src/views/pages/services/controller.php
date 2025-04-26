@@ -12,7 +12,7 @@ class ServicesController extends PageBaseController
   protected function initialize()
   {
     $this->add_to_context([
-      'title' => 'Sobre nosotros',
+      'title' => 'Comprehensive Talent Solutions ',
     ]);
 
   }

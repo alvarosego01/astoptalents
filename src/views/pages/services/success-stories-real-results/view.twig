@@ -1,0 +1,199 @@
+{% extends "base.twig" %}
+
+{% from 'components/buttons/Button.twig' import Component as Button %}
+{% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
+{% block content %}
+
+	<!-- Hero -->
+	<section class="relative  overflow-hidden successHeader sucessSection_00">
+
+		<!-- Bg gradient -->
+		{# <div
+																																		    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none "
+																																		    aria-hidden="true"></div> #}
+
+		<!-- Illustration --><div
+			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true"> {# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
+																																																																				    #}
+		</div>
+
+		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+			<div
+				class="grid grid-cols-1 pt-32 pb-20 md:pt-40 md:pb-20">
+
+				<!-- Hero content -->
+				<div
+					class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+					{# <div data-aos="zoom-out">
+																																																																																					          <div
+																																																																																					            class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
+																																																																																					            <div class="text-gray-400">
+																																																																																					              Lorem ipsum dolor sit amet consectetur
+																																																																																					            </div>
+																																																																																					          </div>
+																																																																																					        </div> #}
+					<h1 class="mb-61 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+						<span
+							class="text-darkBlue">
+							{# Este es el about #}
+							{{ title }}
+						</span>
+						<br>
+						with Astoptalent
+					</h1>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="mb-10 pcTab:mb-20 servicesSection_01">
+
+		<div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+			<div class="flex flex-col gap-y-20 sectionContent">
+
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'E-Commerce Growth',
+        title: 'E-Commerce Growth',
+        desc: "<span class='text-darkBlue font-semibold'>Senior Accountant for a CPA Firm</span><br><br> A prominent CPA firm in Chicago faced challenges finding a senior accountant with expertise in tax and 
+		audit compliance during the busy season. Astoptalent matched them with Javier O., 
+		a skilled CPA based in Mexico. Javier integrated seamlessly into their team, handling
+		multiple client accounts and reducing overtime hours for in-house staff. His contributions
+		led to a 20% increase in client satisfaction within three months.",
+        side: 'left'
+      })
+     }}
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'Graphic Design Success',
+        title: 'Graphic Design Success ',
+        desc: "<span class='text-darkBlue font-semibold'>Digital Designer for a Marketing Company </span><br><br> A digital marketing agency in Los Angeles hired Sofia M., a graphic designer from Venezuela, through Astoptalent.
+		Sofia created captivating visuals that boosted client retention rates by 35%, including a viral
+		campaign that achieved over 1 million views. The agency saved 80% on hiring costs compared to local
+		hires.",
+        side: 'right'
+      })
+     }}
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'Freelance Hiring',
+        title: 'Freelance Hiring',
+        desc: "<span class='text-darkBlue font-semibold'>Software Engineer for an IT Company</span><br><br> Astoptalent connected an IT company in Austin with Miguel L., a skilled software engineer from Colombia. Miguel optimized 
+		their data processing workflow, reducing processing times by 50% and helping launch a new analytics
+		dashboard ahead of schedule. His contributions resulted in a 20% increase in revenue.",
+        side: 'left'
+      })
+     }}
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'Marketing Trends',
+        title: 'Marketing Trends',
+        desc: "<span class='text-darkBlue font-semibold'>Executive Assistant for a Startup CEO </span><br><br> The CEO of a San Francisco-based fintech startup hired Camila P., a highly organized remote assistant from Colombia. Camila streamlined the
+		CEO’s schedule, improved productivity by 40%, and helped close a successful funding round.",
+        side: 'right'
+      })
+     }}
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'Small Business Growth',
+        title: 'Small Business Growth',
+        desc: "<span class='text-darkBlue font-semibold'>Paralegal for a Top U.S. Law Firm </span><br><br> Astoptalent helped a U.S. law firm in New York hire Victoria H., a detail-oriented paralegal from Mexico.
+		Victoria managed case preparations, conducted legal research, and contributed to a high-profile win.
+		The firm saw a 30% reduction in overhead costs while maintaining exceptional service quality.",
+        side: 'left'
+      })
+     }}
+				{{
+      ImageInfo_1({
+        image: get_file('/images/talents_results01.png'),
+        alt: 'Team Collaboration',
+        title: 'Team Collaboration',
+        desc: "<span class='text-darkBlue font-semibold'>Customer Success Specialist for an E-Commerce Company </span><br><br> A Miami-based e-commerce company hired Andres C., a customer success specialist from Argentina. Andres reduced response
+		times by 50% and boosted customer satisfaction by 40%, resulting in an 18% increase in repeat sales.",
+        side: 'right'
+      })
+     }}
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="relative overflow-hidden homeHeader servicesSection_02 bg-lightBlue">
+		<div
+			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">{# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
+																																																																				    #}
+		</div>
+
+		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+			<div class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
+
+				<div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+					<h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+						Why These Stories Matter
+					</h2>
+					<p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
+						These success stories highlight how Astoptalent helps businesses of all sizes optimize their operations,
+												scale with top-tier talent, and improve overall performance. By hiring remote professionals from LATAM,
+												companies can save up to 80% in hiring costs while achieving better results.
+					</p>
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="relative overflow-hidden homeHeader servicesSection_03 ">
+		<div
+			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">{# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
+																																																																				    #}
+		</div>
+
+		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+			<div class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
+
+				<div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+					<h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+						<span class="text-darkBlue">Ready to Achieve Similar
+						</span>
+						<br>
+						Success?
+					</h2>
+					<p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
+						Contact Astoptalent today to explore how we can help your
+						<br>
+						business thrive with top LATAM talent.
+					</p>
+
+					{{ Button({
+            text: "Book Your Free Consultation Now",
+            url: "#0",
+            r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+            type: 'primary',
+            classes: 'mt-5'
+            }) }}
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -4,6 +4,7 @@
   alt: '',
   icon: '',
   title: '',
+  subTitle: '',
   desc: '',
   side: 'left'
 }) %}
@@ -14,7 +15,11 @@
 {% set side = param.side %}
 
 <div class="ImageInfo_1">
-  <div class="grid w-10/12 gap-10 mx-auto pcTab:w-full pcTab:gap-6 lg:gap-10 pcTab:grid-cols-2 ">
+  <div class="grid w-10/12 gap-10 mx-auto  pcTab:w-full pcTab:gap-6 lg:gap-10 pcTab:grid-cols-2
+  {% if side == 'right' %}
+      !flex !flex-col-reverse pcTab:!grid
+  {% endif %}
+  ">
 
     {% if side == 'left' %}
 

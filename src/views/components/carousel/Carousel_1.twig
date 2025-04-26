@@ -50,6 +50,7 @@ slides: [],
 
       </div>
 
+      {% if slide.button.text != '' %}
       <div
         class="absolute flex items-center justify-center w-full -bottom-24 buttonSection animate__animated animate__pulse">
         <div class="flex justify-center ">
@@ -60,8 +61,8 @@ slides: [],
           }) }}
 
         </div>
-
       </div>
+      {% endif %}
 
     </div>
 
