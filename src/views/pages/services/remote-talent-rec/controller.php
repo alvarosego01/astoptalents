@@ -47,7 +47,6 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
     $this->add_to_context([
       'table' => $table,
     ]);
-
   }
 
   function setSlider()
@@ -66,11 +65,19 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           smooth real-time collaboration and communication <br class='textBreak'>
           throughout the workday."
         ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
+        ]
       ],
       [
         'image' => [
           'src' => $this->general_functions->get_file('/images/slider_2.png'),
           'alt' => 'Cost Effective Talent service',
+        ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
         ],
         'info' => [
           'title' => "Cost-Effective Talent",
@@ -84,6 +91,10 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'src' => $this->general_functions->get_file('/images/slider_3.png'),
           'alt' => 'high english proficiency service',
         ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
+        ],
         'info' => [
           'title' => "High English Proficiency",
           'desc' => "All candidates are rigorously vetted for English proficiency, <br class='textBreak'>
@@ -96,6 +107,10 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'src' => $this->general_functions->get_file('/
 images/slider_4.png'),
           'alt' => 'Your full service',
+        ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
         ],
         'info' => [
           'title' => "Top-Tier Talent",

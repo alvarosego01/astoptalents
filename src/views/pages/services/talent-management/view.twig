@@ -4,159 +4,144 @@
 {% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
 {% block content %}
 
-	<!-- Hero -->
-	<section class="relative mb-20 overflow-hidden servicesHeader servicesSection_00 bg-lightBlue">
+<!-- Hero -->
+<section class="relative mb-20 overflow-hidden servicesHeader servicesSection_00 bg-lightBlue">
 
-		<!-- Bg gradient -->
-		{# <div
-																								    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none "
-																								    aria-hidden="true"></div> #}
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-1 pt-32 pb-20 md:pt-40 md:pb-20">
 
-		<!-- Illustration --><div
-			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true"> {# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-																																																    #}
-		</div>
-
-		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-			<div
-				class="grid grid-cols-1 pt-32 pb-20 md:pt-40 md:pb-20">
-
-				<!-- Hero content -->
-				<div
-					class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
-
-					{# <div data-aos="zoom-out">
-																																																												          <div
-																																																												            class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
-																																																												            <div class="text-gray-400">
-																																																												              Lorem ipsum dolor sit amet consectetur
-																																																												            </div>
-																																																												          </div>
-																																																												        </div> #}
-					<h1 class="mb-61 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
-						<span
-							class="text-darkBlue">
-							{# Este es el about #}
-							{{ title }}
-						</span>
-						<br>
-						Solutions for Your Remote Teams
-					</h1>
-					<p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
-						Astoptalent offers end-to-end talent management services, from recruitment
-						<br>
-						to onboarding and payroll, ensuring your remote teams perform at their best and
-						<br>
-						seamlessly integrate into your company culture.
-					</p>
-					{{ Button({
-            text: "Book Your Free Consultation Now",
-            url: "#0",
-            r_icon: "<i class='bx bx-right-arrow-alt'></i>",
-            type: 'primary',
-            classes: 'mt-5'
-            }) }}
+      <!-- Hero content -->
+      <div
+        class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
 
 
-				</div>
+        <h1 class="leading-normal mb-61 text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+          <span class="text-darkBlue">
+           Comprehensive Talent Management
+          </span>
+          <br>
+          Solutions for Your Remote Teams
+        </h1>
+        <p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Astoptalent offers end-to-end talent management services, from recruitment
+          <br>
+          to onboarding and payroll, ensuring your remote teams perform at their best and
+          <br>
+          seamlessly integrate into your company culture.
+        </p>
+        {{ Button({
+        text: "Book Your Free Consultation",
+        url: "#0",
+        r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+        type: 'primary',
+        classes: 'mt-5'
+        }) }}
 
 
-			</div>
-		</div>
-	</section>
+      </div>
 
 
-	<section class="mb-20 homeSection_01">
-		{% include "pages/services/sections/ChooseSlider.twig" %}
-	</section>
+    </div>
+  </div>
+</section>
 
 
-	<section class="mb-10 pcTab:mb-20 servicesSection_02">
+<section class="mb-10 pcTab:mb-20 homeSection_01">
+  {% include "pages/services/sections/ChooseSlider.twig" %}
+</section>
 
-		<div class="max-w-6xl px-4 mx-auto sm:px-6">
-			<div class="sectionTop">
 
-				<h2 class="mx-auto mb-10 font-bold text-center h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
-				Tailored Talent Management Services
-				</h2>
-			</div>
-			<div class="flex flex-col gap-y-20 sectionContent">
+<section class="mb-10 pcTab:mb-20 servicesSection_02">
 
-				{{
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="sectionTop">
+
+      <h2 class="mx-auto mb-10 font-bold text-center h3 title text-darkBlue" data-aos="zoom-out" data-aos-delay="100">
+        Tailored Talent Management Services
+      </h2>
+    </div>
+    <div class="flex flex-col gap-y-20 sectionContent">
+
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Full Talent Lifecycle Management',
-        title: 'Full Talent Lifecycle Management',
-        desc: "From recruitment to integration and continuous support, we handle every step of the process to ensure success.",
-        side: 'left'
+      image: get_file('/images/talents_results01.png'),
+      alt: 'Full Talent Lifecycle Management',
+      title: 'Full Talent Lifecycle Management',
+      desc: "From recruitment to integration and continuous support, we handle every step of the process to ensure
+      success.",
+      side: 'left'
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Payroll & Compliance Services',
-        title: 'Payroll & Compliance Services ',
-        desc: "We manage payroll, taxes, and ensure your teams are compliant with local labor laws, saving you time and reducing risks.",
-        side: 'right'
+      image: get_file('/images/talents_results01.png'),
+      alt: 'Payroll & Compliance Services',
+      title: 'Payroll & Compliance Services ',
+      desc: "We manage payroll, taxes, and ensure your teams are compliant with local labor laws, saving you time and
+      reducing risks.",
+      side: 'right'
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Ongoing Performance Support',
-        title: 'Ongoing Performance Support',
-        desc: "Astoptalent offers continuous monitoring of performance and well-being, helping you maximize your remote team's output.",
-        side: 'left'
+      image: get_file('/images/talents_results01.png'),
+      alt: 'Ongoing Performance Support',
+      title: 'Ongoing Performance Support',
+      desc: "Astoptalent offers continuous monitoring of performance and well-being, helping you maximize your remote
+      team's output.",
+      side: 'left'
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Customized Onboarding Programs',
-        title: 'Customized Onboarding Programs',
-        desc: "We provide customized onboarding programs to ensure smooth transitions and effective team integration.",
-        side: 'right'
+      image: get_file('/images/talents_results01.png'),
+      alt: 'Customized Onboarding Programs',
+      title: 'Customized Onboarding Programs',
+      desc: "We provide customized onboarding programs to ensure smooth transitions and effective team integration.",
+      side: 'right'
       })
-     }}
-			</div>
+      }}
+    </div>
 
-		</div>
+  </div>
 
-	</section>
-
-
-	<section class="relative overflow-hidden homeHeader servicesSection_03 bg-lightBlue">
-		<div
-			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">{# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-																																																    #}
-		</div>
-
-		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-			<div class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
-
-				<div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
-
-					<h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
-						<span class="text-darkBlue">Ready to Optimize Your Team’s </span>
-						<br>
-						Performance?
-					</h2>
-					<p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
-						Contact Astoptalent today to explore how our talent management services <br> can help you build and sustain high-performing remote teams. </p>
-
-					{{ Button({
-            text: "Book Your Free Consultation Now",
-            url: "#0",
-            r_icon: "<i class='bx bx-right-arrow-alt'></i>",
-            type: 'primary',
-            classes: 'mt-5'
-            }) }}
-
-				</div>
+</section>
 
 
-			</div>
-		</div>
-	</section>
+<section class="relative overflow-hidden homeHeader servicesSection_03 bg-lightBlue">
+  <div class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">{# <img
+      src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
+    #}
+  </div>
+
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
+
+      <div
+        class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+        <h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+          <span class="text-darkBlue">Ready to Optimize Your Team’s </span>
+          <br>
+          Performance?
+        </h2>
+        <p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Contact Astoptalent today to explore how our talent management services <br> can help you build and sustain
+          high-performing remote teams. </p>
+
+        {{ Button({
+        text: "Book Your Free Consultation",
+        url: "#0",
+        r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+        type: 'primary',
+        classes: 'mt-5'
+        }) }}
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
 {% endblock %}
