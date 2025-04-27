@@ -55,7 +55,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
 
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_1.png'),
+          'src' => $this->general_functions->get_file('/images/15 1.png'),
           'alt' => 'Aligned Time Zones service',
         ],
         'info' => [
@@ -72,7 +72,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_2.png'),
+          'src' => $this->general_functions->get_file('/images/14 1.png'),
           'alt' => 'Cost Effective Talent service',
         ],
         'button' => [
@@ -88,7 +88,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/12 1.png'),
           'alt' => 'high english proficiency service',
         ],
         'button' => [
@@ -104,8 +104,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/
-images/slider_4.png'),
+          'src' => $this->general_functions->get_file('/images/13 1.png'),
           'alt' => 'Your full service',
         ],
         'button' => [

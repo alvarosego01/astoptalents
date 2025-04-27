@@ -94,11 +94,11 @@ class HomeController extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_1.png'),
+          'src' => $this->general_functions->get_file('/images/slider_3.png'),
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_laptop_person.png') ."'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check.png') ."'>",
           'title' => "Save Up to 80%<br> on Hiring Costs",
           'desc' => "By hiring remote talent from Latin America, U.S. <br class='textBreak'>
           companies can save up to 80% in hiring and <br class='textBreak'>
@@ -132,11 +132,11 @@ class HomeController extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/slider_1.png'),
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_check.png') ."'>",
+         'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_laptop_person.png') ."'>",
           'title' => "Seamless Team Collaboration<br> with Our Virtual Office",
           'desc' => 'Our platform allows your remote team to interact <br class="textBreak">
           and collaborate as if they were working in the same office. <br class="textBreak">
@@ -168,21 +168,7 @@ class HomeController extends PageBaseController
           'link' => '/#'
         ]
       ],
-      // [
-      //   'image' => [
-      //     'src' => $this->general_functions->get_file('/images/slider_5.png'),
-      //     'alt' => 'Your full service',
-      //   ],
-      //   'info' => [
-      //     'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_protect.png') ."'>",
-      //     'title' => "No Compliance<br> Worries",
-      //     'desc' => "We manage all legal and compliance requirements,<br> strictly adhering to local employment regulations<br> across all operating countries"
-      //   ],
-      //   'button' => [
-      //     'text' => 'Learn more',
-      //     'link' => '/#'
-      //   ]
-      // ],
+
     );
 
     $this->add_to_context([
