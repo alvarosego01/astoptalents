@@ -71,7 +71,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/Ongoing Support 2.png'),
           'alt' => 'Your full service',
         ],
           'button' => [

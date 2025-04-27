@@ -20,7 +20,7 @@
 {% set button = param.button %}
 
 <div class="ImageInfo_1">
-  <div class="grid w-10/12 gap-10 mx-auto  pcTab:w-full pcTab:gap-6 lg:gap-10 pcTab:grid-cols-2
+  <div class="grid w-10/12 gap-10 mx-auto  pcTab:w-full pcTab:gap-5 pcTab:grid-cols-2
   {% if side == 'right' %}
       !flex !flex-col-reverse pcTab:!grid
   {% endif %}
@@ -31,7 +31,7 @@
       <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image"
       data-aos="zoom-out" data-aos-delay="100"
       >
-          <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
+          <img class="block object-cover object-top w-auto h-64 sm:h-96 pcTab:h-[450px] mx-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
       </div>
 
       <div class="flex flex-col items-center justify-center col-span-2 gap-5 pcTab:!items-start pcTab:col-span-1 pcTab:pr-8 info lg:pr-14"
@@ -84,7 +84,7 @@
       <div class="relative w-full h-full col-span-2 mx-auto overflow-hidden pcTab:col-span-1 imageContent image"
       data-aos="zoom-out" data-aos-delay="150"
       >
-        <img class="block object-cover w-auto h-64 sm:h-96 pcTab:w-11/12 mx-auto pcTab:h-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
+        <img class="block object-cover object-top w-auto h-64 sm:h-96 pcTab:h-[450px] mx-auto rounded-[50px]" src="{{ param.image }}" alt="{{ param.alt }}">
       </div>
 
     {% endif %}
