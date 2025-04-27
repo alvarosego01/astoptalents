@@ -141,7 +141,6 @@ class StarterSite extends Site
    */
   public function add_to_context($context)
   {
-
     $context['menu']  = Timber::get_menu();
     $context['site']  = $this;
 
@@ -154,11 +153,12 @@ class StarterSite extends Site
     $context['theme_settings'] = (new CarbonFields())->load_theme_settings('theme-settings');
     $context['header_menu_primary'] = (new Menus_Handler())->get_menu_items('navbar_primary');
     $context['header_menu_right'] = (new Menus_Handler())->get_menu_items('navbar_primary_right');
-    $context['footer_menu'] = (new Menus_Handler())->get_menu_items('footer');
-    $context['footer_menu_2'] = (new Menus_Handler())->get_menu_items('footer_2');
-    $context['menu_socials'] = (new Menus_Handler())->get_menu_items('socials');
+    $context['footer_solutions'] = (new Menus_Handler())->get_menu_items('footer_solutions');
+    $context['footer_information'] = (new Menus_Handler())->get_menu_items('footer_information');
+    $context['socials'] = (new Menus_Handler())->get_menu_items('socials');
 
     return $context;
+
   }
 
   public function theme_supports()
@@ -223,13 +223,13 @@ class StarterSite extends Site
       array(
         'navbar_primary' => __('Primary Menu', THEME_NAME),
         'navbar_primary_right' => __('Primary right Menu', THEME_NAME),
-        'footer' => __('Footer Menu', THEME_NAME),
-        'footer_2' => __('Footer Menu 2', THEME_NAME),
+        'footer_solutions' => __('Footer solutions menu', THEME_NAME),
+        'footer_information' => __('Footer information menu', THEME_NAME),
         'socials' => __('Social network', THEME_NAME)
       )
     );
 
-    $menu_name = 'Footer Menu';
+    $menu_name = 'Footer Solutions Menu';
     $menu_exists = wp_get_nav_menu_object($menu_name);
     if (!$menu_exists) {
       $menu_id = wp_create_nav_menu($menu_name);
@@ -240,9 +240,27 @@ class StarterSite extends Site
         'menu-item-status' => 'publish'
       ));
 
-      if (!has_nav_menu('footer')) {
+      if (!has_nav_menu('footer_solutions')) {
         set_theme_mod('nav_menu_locations', array(
-          'footer' => $menu_id
+          'footer_solutions' => $menu_id
+        ));
+      }
+    }
+
+    $menu_name = 'Footer Information Menu';
+    $menu_exists = wp_get_nav_menu_object($menu_name);
+    if (!$menu_exists) {
+      $menu_id = wp_create_nav_menu($menu_name);
+      wp_update_nav_menu_item($menu_id, 0, array(
+        'menu-item-title' => __('Home'),
+        'menu-item-classes' => 'home',
+        'menu-item-url' => home_url('/'),
+        'menu-item-status' => 'publish'
+      ));
+
+      if (!has_nav_menu('footer_information')) {
+        set_theme_mod('nav_menu_locations', array(
+          'footer_information' => $menu_id
         ));
       }
     }
