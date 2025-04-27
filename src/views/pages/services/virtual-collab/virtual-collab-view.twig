@@ -1,0 +1,248 @@
+{% extends "base.twig" %}
+
+{% from 'components/buttons/Button.twig' import Component as Button %}
+{% from 'components/tables/Table_1.twig' import Component as Table_1 %}
+{% from 'components/content/BannerCta_1.twig' import Component as BannerCta_1 %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="relative mb-20 overflow-hidden homeHeader bg-lightBlue remoteTalentRec_00">
+
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-3 pt-32 pb-20 md:pt-52 ">
+
+      <!-- Hero content -->
+      <div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center md:mx-0 md:text-left info">
+
+        <h1 class="w-full mb-6 leading-normal text-center text-tealBlue h1 font-uncut-sans" data-aos="zoom-out"
+          data-aos-delay="100">
+          Seamless Collaboration with <br class="textBreak">
+          <span class="text-darkBlue">
+          Our Virtual Office Platform
+          </span>
+
+        </h1>
+        <p class="w-full mb-10 text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Astoptalent’s proprietary virtual office platform transforms <br class="textBreak">
+          remote work into a collaborative, interactive experience. <br class="textBreak">
+          Enhance team communication, task management, <br class="textBreak">
+          and productivity—all in one place.
+        </p>
+
+
+        <div data-aos="zoom-out" data-aos-delay="200">
+          {{ Button({
+          text: "Book Your Free Demo Now",
+          url: "#0",
+          r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+          type: 'primary'
+          }) }}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mb-10 pcTab:mb-20 remoteTalentRec_01">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    {# <div class="px-10 py-24 lg:px-20 rounded-[50px] contentCard bg-lightBlue"> #}
+    <div >
+
+      <div class="mb-16 sectionTop"
+      data-aos="zoom-out" data-aos-delay="100"
+      >
+
+        <h2 class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+            <strong>
+              How Our Virtual Collaboration <br class="textBreak">
+              Platform Works Streamline Your Team’s Workflows <br class="textBreak">
+              with Our Virtual Office
+            </strong>
+        </h2>
+
+      </div>
+
+      <div class="sectionContent ">
+
+        <div class="hidden grid-cols-4 pcTab:grid desktop">
+
+          <div class="col-span-1 mb-4 info1"
+          data-aos="zoom-out" data-aos-delay="150"
+          >
+             <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Avatar-Based Interaction
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                Astoptalent’s platform allows team members to interact through avatars in a fully immersive, virtual environment. Collaborate in real-time, join meetings, and manage tasks from anywhere.
+             </p>
+          </div>
+          <div class="col-span-1 col-start-3 info2"
+          data-aos="zoom-out" data-aos-delay="150"
+          >
+            <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Real-Time Communication & Collaboration
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                Our platform integrates real-time communication tools like chat, video calls, and file sharing, making it easy for your remote team to stay connected and productive.
+             </p>
+          </div>
+          <div class="col-span-4 my-4 imageSteps" data-aos="zoom-out" data-aos-delay="200">
+              <img src="{{ get_file('/images/step_talent_desktop.svg') }}" alt="choose talent steps mobile">
+          </div>
+          <div class="col-span-1 col-start-2 info3 "
+          data-aos="zoom-out" data-aos-delay="250">
+           <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Task Management & Workflow Automation
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                End-to-end talent management services—from recruitment to onboarding and payroll—ensuring seamless integration of remote teams.
+             </p>
+          </div>
+          <div class="col-span-1 col-start-4 info4"
+          data-aos="zoom-out" data-aos-delay="300"
+          >
+             <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Seamless Integration with Your Existing Tools
+             </h3>
+             <p class="text-sm text-center text-grayish">
+                Our virtual office platform seamlessly integrates with the tools your team already uses, like Google Workspace, Slack, and more, for a smoother collaboration experience.
+             </p>
+          </div>
+
+        </div>
+        <div class="relative flex flex-row items-center justify-center gap-6 mx-auto w-fit pcTab:hidden mobile">
+
+           <div class="absolute top-0 bottom-0 h-full -left-14 sm:left-0 sm:relative imageSteps" data-aos="zoom-out" data-aos-delay="100">
+            <img class="h-full mx-auto" src="{{ get_file('/images/step_talent_mobile.svg') }}" alt="choose talent steps mobile">
+          </div>
+          <div class="relative flex flex-col justify-between gap-4 pl-2 sm:left-2 left-10 sm:pl-0 info">
+            <div class="info1"
+            data-aos="zoom-out" data-aos-delay="150"
+            >
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Avatar-Based<br>
+                Interaction:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                Astoptalent’s platform allows<br>
+                team members to interact through<br>
+                avatars in a fully immersive,<br>
+                virtual environment. Collaborate<br>
+                in real-time, join meetings, and<br>
+                manage tasks from anywhere.
+             </p>
+            </div>
+            <div class="info2"
+            data-aos="zoom-out" data-aos-delay="200"
+            >
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Real-Time<br>
+                Communication &<br>
+                Collaboration:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                Our platform integrates real-time<br>
+                communication tools like chat,<br>
+                video calls, and file sharing,<br>
+                making it easy for your remote<br>
+                team to stay connected and<br>
+                productive.
+             </p>
+            </div>
+            <div class="info3"
+            data-aos="zoom-out" data-aos-delay="250"
+            >
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Task Management &<br>
+                Workflow Automation:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                End-to-end talent management<br>
+                services—from recruitment to<br>
+                onboarding and payroll—ensuring<br>
+                seamless integration of remote<br>
+                teams.
+             </p>
+            </div>
+            <div class="info4"
+            data-aos="zoom-out" data-aos-delay="300"
+            >
+              <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                Seamless Integration<br>
+                with Your Existing<br>
+                Tools:
+             </h3>
+             <p class="text-[16px] text-left text-grayish">
+                Our virtual office platform<br>
+                seamlessly integrates with the<br>
+                tools your team already uses,<br>
+                like Google Workspace, Slack,<br>
+                and more, for a smoother<br>
+                collaboration experience.
+             </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="mb-10 pcTab:mb-20 remoteTalentRec_02">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    <div class="mb-16 sectionTop">
+
+      <h2 class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue"
+      data-aos="zoom-out" data-aos-delay="100"
+      >
+        <strong>
+        Pricing & Plans
+        </strong>
+      </h2>
+
+        <p class="mb-10 text-base text-center text-grayish" data-aos="zoom-out" data-aos-delay="150">
+        Flexible Plans to Fit Your Business Needs
+      </p>
+
+    </div>
+
+    <div class="mb-10" data-aos="zoom-out" data-aos-delay="150">
+      {{ Table_1({
+        table: table
+      }) }}
+    </div>
+
+  </div>
+
+</section>
+
+ <section class="mb-10 pcTab:mb-20 remoteTalentRec_03">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6" data-aos="zoom-out" data-aos-delay="150">
+
+    {{ BannerCta_1({
+      title: 'Ready to Experience Seamless Team Collaboration?',
+      desc: 'Contact Astoptalent today to learn how our virtual collaboration platform can transform the way your team <br class="textBreak"> works remotely, increasing productivity and enhancing communication.',
+      buttonText: 'Book Your Free Demo Now',
+      buttonLink: '',
+    }) }}
+
+  </div>
+
+</section>
+
+
+
+{% endblock %}
