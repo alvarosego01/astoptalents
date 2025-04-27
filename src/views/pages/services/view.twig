@@ -33,7 +33,7 @@
 																																								            </div>
 																																								          </div>
 																																								        </div> #}
-					<h1 class="mb-61 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+					<h1 class="leading-normal mb-61 text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
 						<span
 							class="text-darkBlue">
 							{# Este es el about #}
@@ -70,7 +70,11 @@
         alt: 'Remote Talent Recruitment',
         title: 'Remote Talent Recruitment',
         desc: "Astoptalent connects U.S. businesses with the top 1% of remote talent from Latin America. Our recruitment process ensures that only highly qualified professionals are selected for your company, with expertise in areas like tech, marketing, customer service, and sales.",
-        side: 'left'
+        side: 'left',
+        button: {
+          text: 'Find the Best Talent for Your Team',
+          link: '/services/remote-talent-recruitment-latam/',
+        }
       })
      }}
 				{{
@@ -79,7 +83,11 @@
         alt: 'Talent Management ',
         title: 'Talent Management ',
         desc: "We provide comprehensive talent management services, including onboarding, payroll, and performance tracking. We ensure that your remote teams are not only integrated but also continuously supported for optimal performance. ",
-        side: 'right'
+        side: 'right',
+        button: {
+          text: 'Optimize Your Remote Team’s Performance',
+          link: '/services/talent-management/',
+        }
       })
      }}
 				{{
@@ -88,7 +96,11 @@
         alt: 'Virtual Collaboration Platform',
         title: 'Virtual Collaboration Platform',
         desc: "Our proprietary virtual office platform creates an immersive remote work experience. Teams can interact via avatars, manage tasks, and collaborate in real-time—creating a seamless working environment regardless of location.",
-        side: 'left'
+        side: 'left',
+         button: {
+          text: 'Experience Seamless Team Collaboration',
+          link: '/services/virtual-collaboration-platform/',
+        }
       })
      }}
 				{{
@@ -97,7 +109,11 @@
         alt: 'Back Office & Administrative Services',
         title: 'Back Office & Administrative Services',
         desc: "Astoptalent handles all your administrative needs, from payroll processing to compliance. We ensure that all legal and tax requirements are met, so you can focus on growing your business while we manage the operations.",
-        side: 'right'
+        side: 'right',
+           button: {
+          text: 'Simplify Your Business Operations',
+          link: '/services/back-office-administrative-services/',
+        }
       })
      }}
 			</div>
@@ -116,8 +132,8 @@
 		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
 			<div
 				class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
-	
-				<div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+				<div class="flex flex-col items-center justify-center col-span-3 gap-4 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
 
 					<h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
 						<span class="text-darkBlue">Ready to Transform</span>
@@ -125,14 +141,17 @@
 						Your Remote Team?
 					</h2>
 
+          <div data-aos="zoom-out" data-aos-delay="150">
+
 					{{ Button({
-            text: "Book a Free Consultation Now and Save!",
+            text: "Book Your Free Consultation",
             url: "#0",
             r_icon: "<i class='bx bx-right-arrow-alt'></i>",
             type: 'primary',
             classes: 'mt-5'
             }) }}
 
+          </div>
 				</div>
 
 

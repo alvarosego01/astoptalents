@@ -4,84 +4,181 @@
 
 {% block content %}
 
-<!-- Hero -->
-<section class="relative overflow-hidden homeHeader homeSection_00">
-
-  <!-- Bg gradient -->
-  {# <div
-    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none "
-    aria-hidden="true"></div> #}
-
-  <!-- Illustration -->
-  <div class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">
-    {# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-    #}
-  </div>
+<section class="relative mb-20 overflow-hidden homeHeader bg-lightBlue submitCv_00">
 
   <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-    <div class="grid grid-cols-3 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="grid grid-cols-3 pt-32 pb-20 md:pt-52 ">
 
       <!-- Hero content -->
-      <div
-        class="flex flex-col items-start justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-left info">
+      <div class="flex flex-col items-start justify-center col-span-3 mx-auto text-center md:mx-0 md:text-left info">
 
-        {# <div data-aos="zoom-out">
-          <div
-            class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
-            <div class="text-gray-400">
-              Lorem ipsum dolor sit amet consectetur
-            </div>
-          </div>
-        </div> #}
-        <h1 class="mb-6 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+        <h1 class="w-full mb-6 leading-normal text-center text-tealBlue h1 font-uncut-sans" data-aos="zoom-out"
+          data-aos-delay="100">
           <span class="text-darkBlue">
-            {# Este es el about #}
-            {{ title }}
-          </span> <br>
-          Save Up 80%
+            Join the Top Talent <br>
+          </span>
+          Pool with Astoptalent
         </h1>
-        <p class="mb-10 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
-          <span class="text-darkBlue">Remote Talent - Top Performance - Alpha Returns</span> <br>
-          AlphaScale Talent connects businesses with top-tier remote <br> professionals, offering a diverse talent pool
-          and cutting-edge <br> virtual office space technology.
+        <p class="w-full text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Looking to grow your career with top companies in the U.S.? <br class="textBreak">
+          Submit your CV and apply for exciting remote opportunities <br class="textBreak">
+          with Astoptalent. Take the first step towards joining an elite team.
         </p>
 
-        <div
-          class="max-w-xs space-y-4 sm:max-w-none sm:flex sm:justify-center md:justify-start sm:space-y-0 sm:space-x-4"
-          data-aos="zoom-out" data-aos-delay="200">
+      </div>
 
-          <div>
-            {{ Button({
-            text: "Hola mundo",
-            url: "#0",
-            l_icon: "<i class='bx bx-briefcase-alt'></i>",
-            type: 'primary'
-            }) }}
+    </div>
+  </div>
+</section>
+
+<section class="mb-10 pcTab:mb-20 submitCv_01">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    {# <div class="px-10 py-24 lg:px-20 rounded-[50px] contentCard bg-lightBlue"> #}
+      <div>
+
+        <div class="mb-16 sectionTop" data-aos="zoom-out" data-aos-delay="100">
+
+          <h2
+            class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+            <strong>
+              How to Apply
+            </strong>
+          </h2>
+
+        </div>
+
+        <div class="sectionContent ">
+
+          <div class="hidden grid-cols-4 pcTab:grid desktop">
+
+            <div class="col-span-1 mb-4 info1" data-aos="zoom-out" data-aos-delay="150">
+              <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Step 1: Prepare Your Video
+              </h3>
+              <p class="text-sm text-center text-grayish">
+                Record a short video (maximum 2 minutes) where you introduce yourself and explain why you’re a great fit
+                for remote work. Please speak in English to showcase your language proficiency.
+              </p>
+            </div>
+            <div class="col-span-1 col-start-3 info2" data-aos="zoom-out" data-aos-delay="200">
+              <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Step 2: Complete the Form
+              </h3>
+              <p class="text-sm text-center text-grayish">
+                Fill out the form below with your personal details, including your CV, contact information, and video.
+                This helps us understand your qualifications and experience for potential roles.
+              </p>
+            </div>
+            <div class="col-span-4 my-4 imageSteps" data-aos="zoom-out" data-aos-delay="200">
+              <img src="{{ get_file('/images/step_talent_desktop.svg') }}" alt="choose talent steps mobile">
+            </div>
+            <div class="col-span-1 col-start-2 info3 " data-aos="zoom-out" data-aos-delay="250">
+              <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Step 3: Answer Key Questions
+              </h3>
+              <p class="text-sm text-center text-grayish">
+                Provide answers to a few short questions that will help us understand your motivations, skills, and what
+                makes you a great fit for a remote team.
+              </p>
+            </div>
+            <div class="col-span-1 col-start-4 info4" data-aos="zoom-out" data-aos-delay="300">
+              <h3 class="mb-2 text-xl font-bold text-center text-darkBlue">
+                Step 4: Take the Next Step
+              </h3>
+              <p class="text-sm text-center text-grayish">
+                Once we receive your application, our team will review it. If your profile matches an open position, we
+                will reach out to schedule an interview.
+              </p>
+            </div>
+
           </div>
+          <div class="relative flex flex-row items-center justify-center gap-6 mx-auto w-fit pcTab:hidden mobile">
 
-          <div>
-            {{ Button({
-            text: "Hola mundo",
-            url: "#0",
-            l_icon: "<i class='bx bx-briefcase-alt'></i>",
-            type: 'secondary'
-            }) }}
+            <div class="absolute top-0 bottom-0 h-full -left-14 sm:left-0 sm:relative imageSteps" data-aos="zoom-out" data-aos-delay="100">
+            <img class="h-full mx-auto" src="{{ get_file('/images/step_talent_mobile.svg') }}" alt="choose talent steps mobile">
+          </div>
+          <div class="relative flex flex-col justify-between gap-4 pl-2 sm:left-2 left-10 sm:pl-0 info">
+              <div class="info1" data-aos="zoom-out" data-aos-delay="150">
+                <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                  Step 1: Prepare Your<br>
+                  Video
+                </h3>
+                <p class="text-[16px] text-left text-grayish">
+                  Record a short video (maximum 2 minutes) where you<br>
+                  introduce yourself and explain why you’re a great fit<br>
+                  for remote work. Please speak in English to showcase<br>
+                  your language proficiency.
+                </p>
+              </div>
+              <div class="info2" data-aos="zoom-out" data-aos-delay="200">
+                <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                  Step 2: Complete the Form
+                </h3>
+                <p class="text-[16px] text-left text-grayish">
+                  Fill out the form below with your personal details,<br>
+                  including your CV, contact information, and video.<br>
+                  This helps us understand your qualifications and<br>
+                  experience for potential roles.
+                </p>
+              </div>
+              <div class="info3" data-aos="zoom-out" data-aos-delay="250">
+                <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                  Step 3: Answer Key<br>
+                  Questions
+                </h3>
+                <p class="text-[16px] text-left text-grayish">
+                  Provide answers to a few short<br>
+                  questions that will help us understand<br>
+                  your motivations, skills, and what<br>
+                  makes you a great fit for a remote<br>
+                  team.
+                </p>
+              </div>
+              <div class="info4" data-aos="zoom-out" data-aos-delay="300">
+                <h3 class="mb-2 text-xl font-bold text-left text-darkBlue">
+                  Step 4: Take the Next<br>
+                  Step
+                </h3>
+                <p class="text-[16px] text-left text-grayish">
+                  Once we receive your application, our team will<br>
+                  review it. If your profile matches an open<br>
+                  position, we will reach out to schedule an<br>
+                  interview.
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
       </div>
 
-      <div class="col-span-3 mx-auto text-center pcTab:col-span-1 md:mx-0 md:text-left image " data-aos="zoom-out"
-        data-aos-delay="250">
-        <img class="mx-auto md:max-w-none" src="{{ get_file('/images/talent_header.svg') }}">
-
-      </div>
-
-
     </div>
-  </div>
+
 </section>
 
+<section class="mb-10 pcTab:mb-20 submitCv_01">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    <div class="px-10 py-24 lg:px-20 rounded-[50px] contentCard bg-lightBlue">
+        <div class="mb-16 sectionTop" data-aos="zoom-out" data-aos-delay="100">
+
+          <h2
+            class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+            <strong>
+           Please Complete the Form Below
+            </strong>
+          </h2>
+
+        </div>
+    </div>
+
+  </div>
+
+</section>
 
 {% endblock %}
