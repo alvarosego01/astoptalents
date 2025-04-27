@@ -1,70 +1,63 @@
 {% from 'components/buttons/Button.twig' import Component as Button %}
 
 <footer class="pt-24 pb-4 bg-darkBlue">
-  <div class="max-w-6xl px-4 pb-10 mx-auto border-b sm:px-6 border-mainWhite">
+	<div class="max-w-6xl px-4 pb-10 mx-auto border-b sm:px-6 border-mainWhite">
 
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-12 ">
+		<div class="grid grid-cols-1 gap-8 sm:grid-cols-12 ">
 
-      <div class="col-span-1 sm:pb-10 firstColumn sm:col-span-6">
-        <div class="mb-4 logo">
-          <img class="w-auto h-24"  src="{{ get_file('/images/logos/logo_alpha.svg') }}" alt="logo alphascale">
-        </div>
-        <div class="flex flex-col gap-6 newsLetter">
-          <span class="text-base text-mainWhite">
-            Global Talent Acquisition Firm
-          </span>
+			<div class="col-span-1 sm:pb-10 firstColumn sm:col-span-6">
+				<div class="mb-4 logo">
+					<img class="w-auto h-24" src="{{ get_file('/images/logos/logo_alpha.svg') }}" alt="logo alphascale">
+				</div>
+				<div class="flex flex-col gap-6 newsLetter">
+					<span class="text-base text-mainWhite">
+						Global Talent Acquisition Firm
+					</span>
 
-          <div class="flex">
-            {{ Button({
+					<div class="flex">
+						{{ Button({
             text: "Free consultation",
             url: "#0",
             type: 'secondary'
             }) }}
-          </div>
+					</div>
 
 
-        </div>
-      </div>
-      <div class="col-span-1 firstColumn sm:col-span-3">
-        <h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
-          Menu
-        </h6>
-        <ul class="space-y-4 text-base">
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">About Us</a>
-          </li>
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Our Story</a>
-          </li>
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Work With Us</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-span-1 firstColumn sm:col-span-3">
-        <h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
-          Contact
-        </h6>
-        <ul class="space-y-4 text-base">
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">About Us</a>
-          </li>
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Our Story</a>
-          </li>
-          <li>
-            <a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="#0">Work With Us</a>
-          </li>
-        </ul>
-      </div>
+				</div>
+			</div>
+			<div class="col-span-1 firstColumn sm:col-span-3">
+				<h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
+					Menu
+				</h6>
 
-    </div>
-  </div>
-  <div class="flex items-center justify-center w-full max-w-6xl py-6 mx-auto rights">
-    <span class="w-full text-base text-center text-mainWhite">
-      © 2024 Your Company. All Rights Reserved.
-    </span>
-  </div>
+				<ul class="space-y-4 text-base">
+					{% for item in footer_menu %}
+						<li>
+							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="{{ item.link }}">{{ item.title }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="col-span-1 firstColumn sm:col-span-3">
+				<h6 class="mb-8 text-lg font-semibold uppercase text-lightBlue">
+					Contact
+				</h6>
+				<ul class="space-y-4 text-base">
+					{% for item in footer_menu_2 %}
+						<li>
+							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-blue-500" href="{{ item.link }}">{{ item.title }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div class="flex items-center justify-center w-full max-w-6xl py-6 mx-auto rights">
+		<span class="w-full text-base text-center text-mainWhite">
+			© 2024 Your Company. All Rights Reserved.
+		</span>
+	</div>
 
 </footer>
 

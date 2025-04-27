@@ -1,0 +1,31 @@
+{% from 'components/cards/TalentCard_1.twig' import Component as TalentCard_1 %}
+
+  <div class="max-w-6xl px-10 mx-auto sm:px-6">
+
+    <div class="sectionContent">
+
+      <div class="grid grid-cols-1 gap-6 mb-14 cards md:grid-cols-2 pcTab:grid-cols-3">
+
+        {% if talents|length > 0 %}
+            {% for item in talents %}
+
+              <div data-aos="zoom-out" data-aos-delay="{{ loop.index * 50 }}">
+                {{
+                  TalentCard_1({
+                    img: item.img,
+                    title: item.title,
+                    subTitle: item.subTitle,
+                    desc: item.desc,
+                    subTag: item.subTag
+                  })
+                }}
+              </div>
+
+            {% endfor %}
+        {% endif %}
+
+      </div>
+
+    </div>
+
+  </div>

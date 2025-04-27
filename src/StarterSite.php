@@ -155,6 +155,7 @@ class StarterSite extends Site
     $context['header_menu_primary'] = (new Menus_Handler())->get_menu_items('navbar_primary');
     $context['header_menu_right'] = (new Menus_Handler())->get_menu_items('navbar_primary_right');
     $context['footer_menu'] = (new Menus_Handler())->get_menu_items('footer');
+    $context['footer_menu_2'] = (new Menus_Handler())->get_menu_items('footer_2');
     $context['menu_socials'] = (new Menus_Handler())->get_menu_items('socials');
 
     return $context;
@@ -223,6 +224,7 @@ class StarterSite extends Site
         'navbar_primary' => __('Primary Menu', THEME_NAME),
         'navbar_primary_right' => __('Primary right Menu', THEME_NAME),
         'footer' => __('Footer Menu', THEME_NAME),
+        'footer_2' => __('Footer Menu 2', THEME_NAME),
         'socials' => __('Social network', THEME_NAME)
       )
     );
