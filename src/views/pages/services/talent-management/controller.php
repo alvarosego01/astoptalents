@@ -28,7 +28,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -43,7 +43,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -59,7 +59,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -75,7 +75,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
