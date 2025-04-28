@@ -135,8 +135,13 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_hands.png') . "'>",
+<<<<<<< HEAD
           'title' => "Access the best talent<br> from Latin America",
           'desc' => "Astoptalent connects U.S. businesses with the top <br class='textBreak'>
+=======
+          'title' => "Access the Best Talent<br> from Latin America",
+          'desc' => "ASTopTalent connects U.S. businesses with the top <br class='textBreak'>
+>>>>>>> dev
           1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
           selection process ensures that only the most skilled <br class='textBreak'>
           and qualified professionals are placed within your team, <br class='textBreak'>
@@ -149,7 +154,7 @@ class HomeController extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/transparent pricing.png'),
           'alt' => 'Your full service',
         ],
         'info' => [
@@ -213,7 +218,7 @@ class HomeController extends PageBaseController
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_search_people.png') . "'>",
           'title' => "We handle compliance<br> and payroll",
           'desc' => 'Forget about the complexities of global payroll <br class="textBreak">
-          and compliance. Astoptalent ensures that all legal and <br class="textBreak">
+          and compliance. ASTopTalent ensures that all legal and <br class="textBreak">
           tax requirements are met, so you can focus on growing <br class="textBreak">
           your business without worrying about <br class="textBreak">
           administrative burdens.'

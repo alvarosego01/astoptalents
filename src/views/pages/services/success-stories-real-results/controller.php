@@ -6,7 +6,7 @@ class ServiceSuccessStoriesRealResults_Controller extends PageBaseController
 {
   protected $view = 'services/success-stories-real-results/view.twig';
   public static string $template_file = 'template-success-stories-real-results.php';
-  public static string $template_name = 'SubPage - Success Stories: Real Results with Astoptalent';
+  public static string $template_name = 'SubPage - Success Stories: Real Results with ASTopTalent';
 
   protected $general_functions;
 

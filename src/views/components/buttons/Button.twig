@@ -24,7 +24,7 @@
         {% set b = 'bg-mainWhite text-darkBlue border-lavenderGray hover:text-darkBlue hover:bg-mainWhite hover:border-lavenderGray' %}
     {% endif %}
 
-    <a class="{{ param.classes }} hover:scale-105 w-auto text-lg  space-x-2 shadow-lg btn bg-gradient-to-t group h-auto pcTab:h-16 px-8 flex justify-center items-center rounded-full hover:!cursor-pointer {{ b }}"
+    <a class="{{ param.classes }} hover:scale-105 w-auto text-sm md:text-lg  space-x-1 shadow-lg btn bg-gradient-to-t group h-auto pcTab:h-16 px-4 py-2 md:py-4 md:px-8 flex justify-center items-center rounded-full hover:!cursor-pointer {{ b }}"
        {% if param.href %} href="{{ param.href }}"{% endif %}
        {% if param.onClick %} onclick="{{ param.onClick }}"{% endif %}
        >
