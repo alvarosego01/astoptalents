@@ -4,140 +4,141 @@
 {% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
 {% block content %}
 
-	<!-- Hero -->
-	<section class="relative mb-20 overflow-hidden servicesHeader servicesSection_00 bg-lightBlue">
+<!-- Hero -->
+<section class="relative mb-20 overflow-hidden servicesHeader servicesSection_00 bg-lightBlue">
 
-		<!-- Bg gradient -->
-		{# <div
-																    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none "
-																    aria-hidden="true"></div> #}
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-1 pt-32 pb-20 md:pt-40 md:pb-20">
 
-		<!-- Illustration --><div
-			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true"> {# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-																																    #}
-		</div>
+      <div
+        class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
 
-		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-			<div
-				class="grid grid-cols-1 pt-32 pb-20 md:pt-40 md:pb-20">
-
-				<!-- Hero content -->
-				<div
-					class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
-
-					{# <div data-aos="zoom-out">
-																																								          <div
-																																								            class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
-																																								            <div class="text-gray-400">
-																																								              Lorem ipsum dolor sit amet consectetur
-																																								            </div>
-																																								          </div>
-																																								        </div> #}
-					<h1 class="mb-61 leading-normal text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
-						<span
-							class="text-darkBlue">
-							{# Este es el about #}
-							{{ title }}
-						</span>
-						<br>
-						to Scale Your U.S. Business
-					</h1>
-					<p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
-						Astoptalent offers top-tier remote talent from Latin America, providing businesses
-						<br>
-						with tailored solutions for recruitment, management, and seamless collaboration,
-						<br>
-						all while saving up to 80% in hiring costs.
-					</p>
+        <h1 class="leading-normal mb-61 text-tealBlue h1 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+          <span class="text-darkBlue">
+           Comprehensive Talent Solutions
+          </span>
+          <br>
+          to Scale Your U.S. Business
+        </h1>
+        <p class="mt-5 text-xl text-grayish " data-aos="zoom-out" data-aos-delay="150">
+          Astoptalent offers top-tier remote talent from Latin America, providing businesses
+          <br>
+          with tailored solutions for recruitment, management, and seamless collaboration,
+          <br>
+          all while saving up to 80% in hiring costs.
+        </p>
 
 
-				</div>
+      </div>
 
 
-			</div>
-		</div>
-	</section>
+    </div>
+  </div>
+</section>
 
-	<section class="mb-10 pcTab:mb-20 servicesSection_01">
+<section class="mb-10 pcTab:mb-20 servicesSection_01">
 
-		<div class="max-w-6xl px-4 mx-auto sm:px-6">
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
 
-			<div class="flex flex-col gap-y-20 sectionContent">
+    <div class="flex flex-col gap-y-20 sectionContent">
 
-				{{
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Remote Talent Recruitment',
-        title: 'Remote Talent Recruitment',
-        desc: "Astoptalent connects U.S. businesses with the top 1% of remote talent from Latin America. Our recruitment process ensures that only highly qualified professionals are selected for your company, with expertise in areas like tech, marketing, customer service, and sales.",
-        side: 'left'
+      image: get_file('/images/Talent Management 1.png'),
+      alt: 'Remote Talent Recruitment',
+      title: 'Remote Talent Recruitment',
+      desc: "Astoptalent connects U.S. businesses with the top 1% of remote talent from Latin America. Our recruitment
+      process ensures that only highly qualified professionals are selected for your company, with expertise in areas
+      like tech, marketing, customer service, and sales.",
+      side: 'left',
+      button: {
+      text: 'Find the Best Talent for Your Team',
+      link: '/services/remote-talent-recruitment-latam/',
+      }
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Talent Management ',
-        title: 'Talent Management ',
-        desc: "We provide comprehensive talent management services, including onboarding, payroll, and performance tracking. We ensure that your remote teams are not only integrated but also continuously supported for optimal performance. ",
-        side: 'right'
+      image: get_file('/images/Remote Talent Recruitment 1.png'),
+      alt: 'Talent Management ',
+      title: 'Talent Management ',
+      desc: "We provide comprehensive talent management services, including onboarding, payroll, and performance
+      tracking. We ensure that your remote teams are not only integrated but also continuously supported for optimal
+      performance. ",
+      side: 'right',
+      button: {
+      text: 'Optimize Your Remote Team’s Performance',
+      link: '/services/talent-management/',
+      }
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Virtual Collaboration Platform',
-        title: 'Virtual Collaboration Platform',
-        desc: "Our proprietary virtual office platform creates an immersive remote work experience. Teams can interact via avatars, manage tasks, and collaborate in real-time—creating a seamless working environment regardless of location.",
-        side: 'left'
+      image: get_file('/images/Virtual Collaboration Platform 1.png'),
+      alt: 'Virtual Collaboration Platform',
+      title: 'Virtual Collaboration Platform',
+      desc: "Our proprietary virtual office platform creates an immersive remote work experience. Teams can interact via
+      avatars, manage tasks, and collaborate in real-time—creating a seamless working environment regardless of
+      location.",
+      side: 'left',
+      button: {
+      text: 'Experience Seamless Team Collaboration',
+      link: '/services/virtual-collaboration-platform/',
+      }
       })
-     }}
-				{{
+      }}
+      {{
       ImageInfo_1({
-        image: get_file('/images/talents_results01.png'),
-        alt: 'Back Office & Administrative Services',
-        title: 'Back Office & Administrative Services',
-        desc: "Astoptalent handles all your administrative needs, from payroll processing to compliance. We ensure that all legal and tax requirements are met, so you can focus on growing your business while we manage the operations.",
-        side: 'right'
+      image: get_file('/images/How We Bring Top Talent to Your U.S. Business.png'),
+      alt: 'Back Office & Administrative Services',
+      title: 'Back Office & Administrative Services',
+      desc: "Astoptalent handles all your administrative needs, from payroll processing to compliance. We ensure that
+      all legal and tax requirements are met, so you can focus on growing your business while we manage the
+      operations.",
+      side: 'right',
+      button: {
+      text: 'Simplify Your Business Operations',
+      link: '/services/back-office-administrative-services/',
+      }
       })
-     }}
-			</div>
+      }}
+    </div>
 
-		</div>
+  </div>
 
-	</section>
-
-
-	<section class="relative overflow-hidden homeHeader servicesSection_02 bg-lightBlue">
-		<div
-			class="absolute -translate-x-1/2 pointer-events-none left-1/2 " aria-hidden="true">{# <img src="https://api.images.cat/300/500/" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
-																																    #}
-		</div>
-
-		<div class="relative max-w-6xl px-4 mx-auto sm:px-6">
-			<div
-				class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
-	
-				<div class="flex flex-col items-center justify-center col-span-3 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
-
-					<h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
-						<span class="text-darkBlue">Ready to Transform</span>
-						<br>
-						Your Remote Team?
-					</h2>
-
-					{{ Button({
-            text: "Book a Free Consultation Now and Save!",
-            url: "#0",
-            r_icon: "<i class='bx bx-right-arrow-alt'></i>",
-            type: 'primary',
-            classes: 'mt-5'
-            }) }}
-
-				</div>
+</section>
 
 
-			</div>
-		</div>
-	</section>
+<section class="relative overflow-hidden servicesSection_02 bg-lightBlue">
+
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-1 pt-20 pb-20 md:pt-30 md:pb-30">
+
+      <div
+        class="flex flex-col items-center justify-center col-span-3 gap-4 mx-auto text-center pcTab:col-span-2 md:mx-0 md:text-center info">
+
+        <h2 class="leading-normal text-tealBlue h2 font-uncut-sans" data-aos="zoom-out" data-aos-delay="100">
+          <span class="text-darkBlue">Ready to Transform</span>
+          <br>
+          Your Remote Team?
+        </h2>
+
+        <div data-aos="zoom-out" data-aos-delay="150">
+
+          {{ Button({
+          text: "Book Your Free Consultation",
+          url: "#0",
+          r_icon: "<i class='bx bx-right-arrow-alt'></i>",
+          type: 'primary',
+          classes: 'mt-5'
+          }) }}
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
 {% endblock %}

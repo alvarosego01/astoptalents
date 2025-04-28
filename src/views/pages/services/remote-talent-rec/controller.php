@@ -30,16 +30,16 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         'Estimated Savings'
       ],
       'values' => [
-        ['Graphic Designer',             4500,  900,  80],
-        ['Digital Marketing Specialist', 6250, 1250,  80],
-        ['SEO Specialist',               4500,  900,  80],
-        ['Sales Representative',         5550,  900,  84],
-        ['Executive Assistant',          5210,  950,  82],
-        ['Software Engineer',           11660, 3000,  74],
-        ['Project Manager (PMP)',        6950, 1350,  81],
-        ['Product Manager',             10870, 2174,  80],
-        ['Full-Stack Developer',         9820, 1950,  80],
-        ['Data Analyst',                 5950, 1190,  80],
+        ['Graphic Designer',             "$4500",  "$900",  "80%"],
+        ['Digital Marketing Specialist', "$6250", "$1250",  "80%"],
+        ['SEO Specialist',               "$4500",  "$900",  "80%"],
+        ['Sales Representative',         "$5550",  "$900",  "84%"],
+        ['Executive Assistant',          "$5210",  "$950",  "82%"],
+        ['Software Engineer',           "$11660", "$3000",  "74%"],
+        ['Project Manager (PMP)',        "$6950", "$1350",  "81%"],
+        ['Product Manager',             "$10870", "$2174",  "80%"],
+        ['Full-Stack Developer',         "$9820", "$1950",  "80%"],
+        ['Data Analyst',                 "$5950", "$1190",  "80%"],
       ]
 
     );
@@ -47,7 +47,6 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
     $this->add_to_context([
       'table' => $table,
     ]);
-
   }
 
   function setSlider()
@@ -56,7 +55,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
 
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_1.png'),
+          'src' => $this->general_functions->get_file('/images/15 1.png'),
           'alt' => 'Aligned Time Zones service',
         ],
         'info' => [
@@ -66,11 +65,19 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           smooth real-time collaboration and communication <br class='textBreak'>
           throughout the workday."
         ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
+        ]
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_2.png'),
+          'src' => $this->general_functions->get_file('/images/14 1.png'),
           'alt' => 'Cost Effective Talent service',
+        ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
         ],
         'info' => [
           'title' => "Cost-Effective Talent",
@@ -81,8 +88,12 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/12 1.png'),
           'alt' => 'high english proficiency service',
+        ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
         ],
         'info' => [
           'title' => "High English Proficiency",
@@ -93,9 +104,12 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/
-images/slider_4.png'),
+          'src' => $this->general_functions->get_file('/images/13 1.png'),
           'alt' => 'Your full service',
+        ],
+        'button' => [
+          'text' => 'Book Your Free Consultation',
+          'url' => '#',
         ],
         'info' => [
           'title' => "Top-Tier Talent",

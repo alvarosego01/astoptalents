@@ -23,100 +23,100 @@ class HomeController extends PageBaseController
   {
     $talents = array(
       [
-        "title" => "Camila P.",
-        "subTitle" => "Executive Assistant",
-        "desc" => "Lives in Colombia
-        Hired by<br  class='hidden md:block'> tech start-up",
-        "img" => $this->general_functions->get_file('/images/camila-p.jpg'),
-        "subTag" => '$900 / month'
+      "title" => "Camila P.",
+      "subTitle" => "Executive Assistant",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Colombia</span><br>
+      Hired by tech start-up",
+      "img" => $this->general_functions->get_file('/images/camila-p.jpg'),
+      "subTag" => '$900 / month'
       ],
       [
-        "title" => "Carla L.",
-        "subTitle" => "Project Manager",
-        "desc" => "Lives in Peru
-Hired by<br  class='hidden md:block'> Fortune 500 company",
-        "img" => $this->general_functions->get_file('/images/carla-l.jpg'),
-        "subTag" => '$1,500 / month'
+      "title" => "Carla L.",
+      "subTitle" => "Project Manager",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Peru</span><br>
+      Hired by Fortune 500 company",
+      "img" => $this->general_functions->get_file('/images/carla-l.jpg'),
+      "subTag" => '$1,500 / month'
       ],
       [
-        "title" => "María R.",
-        "subTitle" => "Bookkeeper",
-        "desc" => " Lives in Venezuela
-Hired hired by<br  class='hidden md:block'> construction company",
-        "img" => $this->general_functions->get_file('/images/maria-r.jpg'),
-        "subTag" => '$925 / month'
+      "title" => "María R.",
+      "subTitle" => "Bookkeeper",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Venezuela</span><br>
+      Hired by construction company",
+      "img" => $this->general_functions->get_file('/images/maria-r.jpg'),
+      "subTag" => '$925 / month'
       ],
       [
-        "title" => "Javier O.",
-        "subTitle" => "Senior Accountant (CPA)",
-        "desc" => "Lives in Mexico
-Hired by<br  class='hidden md:block'> national CPA firm ",
-        "img" => $this->general_functions->get_file('/images/javier-o.jpg'),
-        "subTag" => '$1,600 / month'
+      "title" => "Javier O.",
+      "subTitle" => "Senior Accountant (CPA)",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Mexico</span><br>
+      Hired by national CPA firm ",
+      "img" => $this->general_functions->get_file('/images/javier-o.jpg'),
+      "subTag" => '$1,600 / month'
       ],
       [
-        "title" => "Andres C.",
-        "subTitle" => "Bilingual Customer Service Rep",
-        "desc" => 'Lives in Argentina
-Hired by<br  class="hidden md:block"> e-commerce',
-        "img" => $this->general_functions->get_file('/images/andres-c.jpg'),
-        "subTag" => '$900 / month'
+      "title" => "Andres C.",
+      "subTitle" => "Bilingual Customer Service Rep",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Argentina</span><br>
+      Hired by e-commerce",
+      "img" => $this->general_functions->get_file('/images/andres-c.jpg'),
+      "subTag" => '$900 / month'
       ],
       [
-        "title" => "Alejandro G.",
-        "subTitle" => "Investment Banking Analyst",
-        "desc" => "Lives in Brazil
-Hired by<br  class='hidden md:block' private >equity firm",
-        "img" => $this->general_functions->get_file('/images/alejandro-g.jpg'),
-        "subTag" => '$1,700 / month'
+      "title" => "Alejandro G.",
+      "subTitle" => "Investment Banking Analyst",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Brazil</span><br>
+      Hired by private equity firm",
+      "img" => $this->general_functions->get_file('/images/alejandro-g.jpg'),
+      "subTag" => '$1,700 / month'
       ],
       [
-        "title" => "Valeria M. ",
-        "subTitle" => "Operations Assistant ",
-        "desc" => "Lives in Chile
-Hired by<br  class='hidden md:block'> Fortune 500 company ",
-        "img" => $this->general_functions->get_file('/images/valeria-m.jpg'),
-        "subTag" => '$800 / month '
+      "title" => "Valeria M.",
+      "subTitle" => "Operations Assistant",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Chile</span><br>
+      Hired by Fortune 500 company ",
+      "img" => $this->general_functions->get_file('/images/valeria-m.jpg'),
+      "subTag" => '$800 / month'
       ],
       [
-        "title" => " Victoria H.",
-        "subTitle" => "Paralegal ",
-        "desc" => "Lives in Mexico
-Hired by<br  class='hidden md:block'> NYC law firm ",
-        "img" => $this->general_functions->get_file('/images/victoria-h.avif'),
-        "subTag" => '$900 / month '
+      "title" => " Victoria H.",
+      "subTitle" => "Paralegal",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Mexico</span><br>
+      Hired by NYC law firm ",
+      "img" => $this->general_functions->get_file('/images/victoria-h.avif'),
+      "subTag" => '$900 / month'
       ],
       [
-        "title" => "Miguel L. ",
-        "subTitle" => "Software Engineer ",
-        "desc" => "Lives in Colombia
-Hired by<br  class='hidden md:block'> international tech company ",
-        "img" => $this->general_functions->get_file('/images/miguel-l.jpg'),
-        "subTag" => '$3,000 / month '
+      "title" => "Miguel L.",
+      "subTitle" => "Software Engineer",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Colombia</span><br>
+      Hired by international tech company ",
+      "img" => $this->general_functions->get_file('/images/miguel-l.jpg'),
+      "subTag" => '$3,000 / month'
       ],
       [
-        "title" => "Sofia M. ",
-        "subTitle" => " Graphic Designer",
-        "desc" => "Lives in Venezuela
-Hired by<br  class='hidden md:block'> marketing firm ",
-        "img" => $this->general_functions->get_file('/images/sofia-m.jpg'),
-        "subTag" => '$900 / month '
+      "title" => "Sofia M.",
+      "subTitle" => " Graphic Designer",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Venezuela</span><br>
+      Hired by marketing firm ",
+      "img" => $this->general_functions->get_file('/images/sofia-m.jpg'),
+      "subTag" => '$900 / month'
       ],
       [
-        "title" => "Veronica S. ",
-        "subTitle" => "Community and Social Media Manager ",
-        "desc" => "Lives in Chile
-Hired by<br  class='hidden md:block'> manufacturing company ",
-        "img" => $this->general_functions->get_file('/images/veronica-s.jpg'),
-        "subTag" => '$925 / month '
+      "title" => "Veronica S.",
+      "subTitle" => "Community and Social Media Manager",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Chile</span><br>
+      Hired by manufacturing company ",
+      "img" => $this->general_functions->get_file('/images/veronica-s.jpg'),
+      "subTag" => '$925 / month'
       ],
       [
-        "title" => "Diego R. ",
-        "subTitle" => "Sales Representative ",
-        "desc" => "Lives in Argentina
-Hired by<br  class='hidden md:block'> service company ",
-        "img" => $this->general_functions->get_file('/images/diego-r.jpg'),
-        "subTag" => '$800 / month'
+      "title" => "Diego R.",
+      "subTitle" => "Sales Representative",
+      "desc" => "<span class=\"text-darkBlue\">Lives in Argentina</span><br>
+      Hired by service company ",
+      "img" => $this->general_functions->get_file('/images/diego-r.jpg'),
+      "subTag" => '$800 / month'
       ]
     );
 
@@ -149,11 +149,11 @@ Hired by<br  class='hidden md:block'> service company ",
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_1.png'),
+          'src' => $this->general_functions->get_file('/images/slider_3.png'),
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_laptop_person.png') . "'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check.png') . "'>",
           'title' => "Save Up to 80%<br> on Hiring Costs",
           'desc' => "By hiring remote talent from Latin America, U.S. <br class='textBreak'>
           companies can save up to 80% in hiring and <br class='textBreak'>
@@ -187,11 +187,11 @@ Hired by<br  class='hidden md:block'> service company ",
       ],
       [
         'image' => [
-          'src' => $this->general_functions->get_file('/images/slider_3.png'),
+          'src' => $this->general_functions->get_file('/images/slider_1.png'),
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check.png') . "'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_laptop_person.png') . "'>",
           'title' => "Seamless Team Collaboration<br> with Our Virtual Office",
           'desc' => 'Our platform allows your remote team to interact <br class="textBreak">
           and collaborate as if they were working in the same office. <br class="textBreak">
@@ -223,21 +223,7 @@ Hired by<br  class='hidden md:block'> service company ",
           'link' => '/#'
         ]
       ],
-      // [
-      //   'image' => [
-      //     'src' => $this->general_functions->get_file('/images/slider_5.png'),
-      //     'alt' => 'Your full service',
-      //   ],
-      //   'info' => [
-      //     'icon' => "<img alt='icon slider' class='w-auto h-14' src='". $this->general_functions->get_file('/images/icons/icon_protect.png') ."'>",
-      //     'title' => "No Compliance<br> Worries",
-      //     'desc' => "We manage all legal and compliance requirements,<br> strictly adhering to local employment regulations<br> across all operating countries"
-      //   ],
-      //   'button' => [
-      //     'text' => 'Learn more',
-      //     'link' => '/#'
-      //   ]
-      // ],
+
     );
 
     $this->add_to_context([

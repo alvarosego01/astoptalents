@@ -4,9 +4,9 @@ table: []
 
 {% set table = param.table %}
 
-<div class="inline-block min-w-full overflow-hidden shadow-sm rounded-xl">
+<div class="flex w-full mx-auto overflow-x-scroll shadow-sm pcTab:overflow-hidden pcTab:w-full rounded-xl scrollbar scrollbar-thumb-red-500 scrollbar-track-gray-200">
 
-<table class="w-full min-w-full overflow-x-scroll leading-normal">
+<table class="w-full leading-normal">
   <thead>
     <tr>
       {% for head in table.headers %}
