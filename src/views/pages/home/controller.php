@@ -136,7 +136,7 @@ class HomeController extends PageBaseController
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_hands.png') . "'>",
           'title' => "Access the Best Talent<br> from Latin America",
-          'desc' => "Astoptalent connects U.S. businesses with the top <br class='textBreak'>
+          'desc' => "ASTopTalent connects U.S. businesses with the top <br class='textBreak'>
           1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
           selection process ensures that only the most skilled <br class='textBreak'>
           and qualified professionals are placed within your team, <br class='textBreak'>
@@ -174,7 +174,7 @@ class HomeController extends PageBaseController
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check_2.png') . "'>",
           'title' => "End-to-End Talent<br> Management",
-          'desc' => "Astoptalent manages the entire talent lifecycle for <br class='textBreak'>
+          'desc' => "ASTopTalent manages the entire talent lifecycle for <br class='textBreak'>
           your business. From recruiting top-tier candidates to <br class='textBreak'>
           seamless onboarding, payroll management, and ongoing <br class='textBreak'>
           support, we ensure that your remote teams are <br class='textBreak'>
@@ -213,7 +213,7 @@ class HomeController extends PageBaseController
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_search_people.png') . "'>",
           'title' => "We Handle Compliance<br> and Payroll",
           'desc' => 'Forget about the complexities of global payroll <br class="textBreak">
-          and compliance. Astoptalent ensures that all legal and <br class="textBreak">
+          and compliance. ASTopTalent ensures that all legal and <br class="textBreak">
           tax requirements are met, so you can focus on growing <br class="textBreak">
           your business without worrying about <br class="textBreak">
           administrative burdens.'
