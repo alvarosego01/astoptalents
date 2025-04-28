@@ -64,7 +64,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
         ],
         'info' => [
           'title' => "Step 3: Payroll & compliance",
-          'desc' => "Astoptalent takes care of all payroll processing, tax management,
+          'desc' => "ASTopTalent takes care of all payroll processing, tax management,
           and compliance with local labor laws, so you can focus on growing your
           business with peace of mind."
         ]

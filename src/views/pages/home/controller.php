@@ -135,13 +135,8 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_hands.png') . "'>",
-<<<<<<< HEAD
           'title' => "Access the best talent<br> from Latin America",
-          'desc' => "Astoptalent connects U.S. businesses with the top <br class='textBreak'>
-=======
-          'title' => "Access the Best Talent<br> from Latin America",
           'desc' => "ASTopTalent connects U.S. businesses with the top <br class='textBreak'>
->>>>>>> dev
           1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
           selection process ensures that only the most skilled <br class='textBreak'>
           and qualified professionals are placed within your team, <br class='textBreak'>
@@ -179,7 +174,7 @@ class HomeController extends PageBaseController
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check_2.png') . "'>",
           'title' => "End-to-End talent<br> management",
-          'desc' => "Astoptalent manages the entire talent lifecycle for <br class='textBreak'>
+          'desc' => "ASTopTalent manages the entire talent lifecycle for <br class='textBreak'>
           your business. From recruiting top-tier candidates to <br class='textBreak'>
           seamless onboarding, payroll management, and ongoing <br class='textBreak'>
           support, we ensure that your remote teams are <br class='textBreak'>
@@ -239,7 +234,7 @@ class HomeController extends PageBaseController
   protected function initialize()
   {
     $this->add_to_context([
-      'title' => 'Astoptalent - Home',
+      'title' => 'ASTopTalent - Home',
     ]);
   }
 }
