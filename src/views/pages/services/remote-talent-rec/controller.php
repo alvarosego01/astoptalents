@@ -30,16 +30,16 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         'Estimated Savings'
       ],
       'values' => [
-        ['Graphic Designer',             4500,  900,  80],
-        ['Digital Marketing Specialist', 6250, 1250,  80],
-        ['SEO Specialist',               4500,  900,  80],
-        ['Sales Representative',         5550,  900,  84],
-        ['Executive Assistant',          5210,  950,  82],
-        ['Software Engineer',           11660, 3000,  74],
-        ['Project Manager (PMP)',        6950, 1350,  81],
-        ['Product Manager',             10870, 2174,  80],
-        ['Full-Stack Developer',         9820, 1950,  80],
-        ['Data Analyst',                 5950, 1190,  80],
+        ['Graphic Designer',             "$4500",  "$900",  "80%"],
+        ['Digital Marketing Specialist', "$6250", "$1250",  "80%"],
+        ['SEO Specialist',               "$4500",  "$900",  "80%"],
+        ['Sales Representative',         "$5550",  "$900",  "84%"],
+        ['Executive Assistant',          "$5210",  "$950",  "82%"],
+        ['Software Engineer',           "$11660", "$3000",  "74%"],
+        ['Project Manager (PMP)',        "$6950", "$1350",  "81%"],
+        ['Product Manager',             "$10870", "$2174",  "80%"],
+        ['Full-Stack Developer',         "$9820", "$1950",  "80%"],
+        ['Data Analyst',                 "$5950", "$1190",  "80%"],
       ]
 
     );
