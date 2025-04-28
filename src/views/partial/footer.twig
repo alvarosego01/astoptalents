@@ -7,7 +7,7 @@
 
 			<div class="col-span-1 pcTab:pb-10 firstColumn pcTab:col-span-4">
 				<div class="mb-4 logo">
-					<img class="w-auto h-24" src="{{ get_file('/images/logos/logo_alpha.svg') }}" alt="logo alphascale">
+					<img class="w-auto h-24" src="{{ get_file('/images/logos/logo_alpha.svg') }}" alt="logo ASTopTalent ">
 				</div>
 				<div class="flex flex-col gap-6 newsLetter">
 					<span class="text-base text-mainWhite">
@@ -22,11 +22,10 @@
 				<h6 class="mb-8 text-lg font-semibold uppercase text-lightSteelBlue">
 					Top Talent Solution
 				</h6>
-
 				<ul class="space-y-4 text-base">
 					{% for item in footer_solutions %}
 						<li>
-							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-lightSteelBlue" href="{{ item.link }}">{{ item.title }}</a>
+							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-lightSteelBlue" href="{{ item.url }}">{{ item.title }}</a>
 						</li>
 					{% endfor %}
 				</ul>
@@ -38,7 +37,7 @@
 				<ul class="space-y-4 text-base">
 					{% for item in footer_information %}
 						<li>
-							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-lightSteelBlue" href="{{ item.link }}">{{ item.title }}</a>
+							<a class="transition duration-150 ease-in-out text-mainWhite hover:text-lightSteelBlue" href="{{ item.url }}">{{ item.title }}</a>
 						</li>
 					{% endfor %}
 				</ul>
@@ -63,8 +62,8 @@
           </li>
           <li class="flex flex-row items-start justify-start gap-2 leading-normal">
             <i class='text-xl bx bxs-envelope'  ></i>
-            <a href="mailto:info@alphascaletalent.com" class="flex self-center cursor-pointer hover:text-lightSteelBlue">
-            info@alphascaletalent.com
+            <a href="mailto:info@ASTopTalent talent.com" class="flex self-center cursor-pointer hover:text-lightSteelBlue">
+            info@ASTopTalent talent.com
             </a>
           </li>
 				</ul>

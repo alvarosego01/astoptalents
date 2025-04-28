@@ -1,4 +1,4 @@
-# Astoptalents - Website
+# ASTopTalents - Website
 
 # Node version 20 - 23
 
