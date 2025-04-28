@@ -47,7 +47,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "Step 2: Onboarding & Integration",
+          'title' => "Step 2: Onboarding & integration",
           'desc' => "We ensure smooth onboarding by providing customized training,
            clear role definitions, and integration with your company’s processes.
            We make sure your new team members are set up for success from day one."
@@ -63,7 +63,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "Step 3: Payroll & Compliance",
+          'title' => "Step 3: Payroll & compliance",
           'desc' => "ASTopTalent takes care of all payroll processing, tax management,
           and compliance with local labor laws, so you can focus on growing your
           business with peace of mind."
@@ -79,7 +79,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "Step 4: Ongoing Support & Performance Tracking",
+          'title' => "Step 4: Ongoing support & performance tracking",
           'desc' => "We provide continuous support through performance tracking, regular feedback,
            and performance improvement strategies to ensure that your remote teams are always
             performing at their best."

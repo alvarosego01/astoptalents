@@ -135,7 +135,7 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_hands.png') . "'>",
-          'title' => "Access the Best Talent<br> from Latin America",
+          'title' => "Access the best talent<br> from Latin America",
           'desc' => "ASTopTalent connects U.S. businesses with the top <br class='textBreak'>
           1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
           selection process ensures that only the most skilled <br class='textBreak'>
@@ -154,7 +154,7 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check.png') . "'>",
-          'title' => "Save Up to 80%<br> on Hiring Costs",
+          'title' => "Save up to 80%<br> on hiring costs",
           'desc' => "By hiring remote talent from Latin America, U.S. <br class='textBreak'>
           companies can save up to 80% in hiring and <br class='textBreak'>
           operational costs. We provide you with high-caliber <br class='textBreak'>
@@ -173,7 +173,7 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_check_2.png') . "'>",
-          'title' => "End-to-End Talent<br> Management",
+          'title' => "End-to-End talent<br> management",
           'desc' => "ASTopTalent manages the entire talent lifecycle for <br class='textBreak'>
           your business. From recruiting top-tier candidates to <br class='textBreak'>
           seamless onboarding, payroll management, and ongoing <br class='textBreak'>
@@ -192,7 +192,7 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_laptop_person.png') . "'>",
-          'title' => "Seamless Team Collaboration<br> with Our Virtual Office",
+          'title' => "Seamless team collaboration<br> with our virtual office",
           'desc' => 'Our platform allows your remote team to interact <br class="textBreak">
           and collaborate as if they were working in the same office. <br class="textBreak">
           With avatar-based interaction and real-time communication, <br class="textBreak">
@@ -211,7 +211,7 @@ class HomeController extends PageBaseController
         ],
         'info' => [
           'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_search_people.png') . "'>",
-          'title' => "We Handle Compliance<br> and Payroll",
+          'title' => "We handle compliance<br> and payroll",
           'desc' => 'Forget about the complexities of global payroll <br class="textBreak">
           and compliance. ASTopTalent ensures that all legal and <br class="textBreak">
           tax requirements are met, so you can focus on growing <br class="textBreak">
@@ -234,7 +234,7 @@ class HomeController extends PageBaseController
   protected function initialize()
   {
     $this->add_to_context([
-      'title' => 'Sobre nosotros',
+      'title' => 'ASTopTalent - Home',
     ]);
   }
 }
