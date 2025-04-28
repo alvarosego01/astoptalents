@@ -10,7 +10,6 @@ class ServiceSuccessStoriesRealResults_Controller extends PageBaseController
 
   protected $general_functions;
 
-
   protected function initialize()
   {
     $this->add_to_context([
