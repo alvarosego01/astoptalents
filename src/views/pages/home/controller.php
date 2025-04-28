@@ -66,7 +66,7 @@ class HomeController extends PageBaseController
       "title" => "Alejandro G.",
       "subTitle" => "Investment Banking Analyst",
       "desc" => "<span class=\"text-darkBlue\">Lives in Brazil</span><br>
-      Hired by<br  class='hidden md:block' private >equity firm",
+      Hired by private equity firm",
       "img" => $this->general_functions->get_file('/images/alejandro-g.jpg'),
       "subTag" => '$1,700 / month'
       ],
