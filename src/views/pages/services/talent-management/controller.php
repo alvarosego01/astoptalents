@@ -28,12 +28,12 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
           'title' => "Step 1: Recruitment",
-          'desc' => "Astoptalent helps you find top talent that aligns with your company’s needs.
+          'desc' => "ASTopTalent helps you find top talent that aligns with your company’s needs.
            We focus on matching skills, experience, and cultural fit to ensure you have the best professionals on your team."
         ]
       ],
@@ -43,7 +43,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -59,12 +59,12 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
           'title' => "Step 3: Payroll & compliance",
-          'desc' => "Astoptalent takes care of all payroll processing, tax management,
+          'desc' => "ASTopTalent takes care of all payroll processing, tax management,
           and compliance with local labor laws, so you can focus on growing your
           business with peace of mind."
         ]
@@ -75,7 +75,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
