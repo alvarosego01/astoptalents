@@ -26,7 +26,7 @@ class HomeController extends PageBaseController
         "title" => "Camila P.",
         "subTitle" => "Executive Assistant",
         "desc" => "Lives in Colombia
-        Hired by tech<br  class='hidden md:block'> start-up",
+        Hired by<br  class='hidden md:block'> tech start-up",
         "img" => $this->general_functions->get_file('/images/camila-p.jpg'),
         "subTag" => '$900 / month'
       ],
@@ -34,7 +34,7 @@ class HomeController extends PageBaseController
         "title" => "Carla L.",
         "subTitle" => "Project Manager",
         "desc" => "Lives in Peru
-Hired by Fortune 500 company",
+Hired by<br  class='hidden md:block'> Fortune 500 company",
         "img" => $this->general_functions->get_file('/images/carla-l.jpg'),
         "subTag" => '$1,500 / month'
       ],
@@ -42,7 +42,7 @@ Hired by Fortune 500 company",
         "title" => "María R.",
         "subTitle" => "Bookkeeper",
         "desc" => " Lives in Venezuela
-Hired hired by construction company",
+Hired hired by<br  class='hidden md:block'> construction company",
         "img" => $this->general_functions->get_file('/images/maria-r.jpg'),
         "subTag" => '$925 / month'
       ],
@@ -50,7 +50,7 @@ Hired hired by construction company",
         "title" => "Javier O.",
         "subTitle" => "Senior Accountant (CPA)",
         "desc" => "Lives in Mexico
-Hired by national<br  class='hidden md:block'> CPA firm ",
+Hired by<br  class='hidden md:block'> national CPA firm ",
         "img" => $this->general_functions->get_file('/images/javier-o.jpg'),
         "subTag" => '$1,600 / month'
       ],
@@ -66,7 +66,7 @@ Hired by<br  class="hidden md:block"> e-commerce',
         "title" => "Alejandro G.",
         "subTitle" => "Investment Banking Analyst",
         "desc" => "Lives in Brazil
-Hired by private <br  class='hidden md:block'>equity firm",
+Hired by<br  class='hidden md:block' private >equity firm",
         "img" => $this->general_functions->get_file('/images/alejandro-g.jpg'),
         "subTag" => '$1,700 / month'
       ],
@@ -74,7 +74,7 @@ Hired by private <br  class='hidden md:block'>equity firm",
         "title" => "Valeria M. ",
         "subTitle" => "Operations Assistant ",
         "desc" => "Lives in Chile
-Hired by Fortune 500 company ",
+Hired by<br  class='hidden md:block'> Fortune 500 company ",
         "img" => $this->general_functions->get_file('/images/valeria-m.jpg'),
         "subTag" => '$800 / month '
       ],
@@ -82,7 +82,7 @@ Hired by Fortune 500 company ",
         "title" => " Victoria H.",
         "subTitle" => "Paralegal ",
         "desc" => "Lives in Mexico
-Hired by NYC <br  class='hidden md:block'>law firm ",
+Hired by<br  class='hidden md:block'> NYC law firm ",
         "img" => $this->general_functions->get_file('/images/victoria-h.avif'),
         "subTag" => '$900 / month '
       ],
@@ -90,7 +90,7 @@ Hired by NYC <br  class='hidden md:block'>law firm ",
         "title" => "Miguel L. ",
         "subTitle" => "Software Engineer ",
         "desc" => "Lives in Colombia
-Hired by international tech company ",
+Hired by<br  class='hidden md:block'> international tech company ",
         "img" => $this->general_functions->get_file('/images/miguel-l.jpg'),
         "subTag" => '$3,000 / month '
       ],
@@ -106,7 +106,7 @@ Hired by<br  class='hidden md:block'> marketing firm ",
         "title" => "Veronica S. ",
         "subTitle" => "Community and Social Media Manager ",
         "desc" => "Lives in Chile
-Hired by manufacturing company ",
+Hired by<br  class='hidden md:block'> manufacturing company ",
         "img" => $this->general_functions->get_file('/images/veronica-s.jpg'),
         "subTag" => '$925 / month '
       ],
@@ -114,7 +114,7 @@ Hired by manufacturing company ",
         "title" => "Diego R. ",
         "subTitle" => "Sales Representative ",
         "desc" => "Lives in Argentina
-Hired by service company ",
+Hired by<br  class='hidden md:block'> service company ",
         "img" => $this->general_functions->get_file('/images/diego-r.jpg'),
         "subTag" => '$800 / month'
       ]
