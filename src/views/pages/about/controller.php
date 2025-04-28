@@ -12,7 +12,7 @@ class AboutController extends PageBaseController
   protected function initialize()
   {
     $this->add_to_context([
-      'title' => 'About Us',
+      'title' => 'About us',
     ]);
 
   }

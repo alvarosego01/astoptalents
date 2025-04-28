@@ -60,7 +60,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         ],
         'info' => [
 
-          'title' => "Aligned Time Zones",
+          'title' => "Aligned time zones",
           'desc' => "LATAM countries share time zones with the U.S., ensuring <br class='textBreak'>
           smooth real-time collaboration and communication <br class='textBreak'>
           throughout the workday."
@@ -80,7 +80,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "Cost-Effective Talent",
+          'title' => "Cost-Effective talent",
           'desc' => "Save up to 80% compared to hiring <br class='textBreak'>locally in the U.S.
           while maintaining high <br class='textBreak'>
           standards of performance and quality."
@@ -96,7 +96,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "High English Proficiency",
+          'title' => "High english proficiency",
           'desc' => "All candidates are rigorously vetted for English proficiency, <br class='textBreak'>
           ensuring they are ready to contribute to your <br class='textBreak'>
           business from day one."
@@ -112,7 +112,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'url' => '#',
         ],
         'info' => [
-          'title' => "Top-Tier Talent",
+          'title' => "Top-Tier talent",
           'desc' => "Access the best professionals from a curated pool <br class='textBreak'>
           of pre-vetted candidates, including experts in <br class='textBreak'>
           tech, marketing, sales, and more."

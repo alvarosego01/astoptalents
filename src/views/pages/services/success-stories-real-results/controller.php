@@ -13,7 +13,7 @@ class ServiceSuccessStoriesRealResults_Controller extends PageBaseController
   protected function initialize()
   {
     $this->add_to_context([
-      'title' => 'Success Stories: Real Results ',
+      'title' => 'Success stories: Real results ',
     ]);
   }
 }
