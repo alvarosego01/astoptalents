@@ -66,7 +66,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           throughout the workday."
         ],
         'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ]
       ],
@@ -76,7 +76,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'alt' => 'Cost Effective Talent service',
         ],
         'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -92,7 +92,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'alt' => 'high english proficiency service',
         ],
         'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
@@ -108,7 +108,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
         'button' => [
-          'text' => 'Book Your Free Consultation',
+          'text' => 'Book your free consultation',
           'url' => '#',
         ],
         'info' => [
