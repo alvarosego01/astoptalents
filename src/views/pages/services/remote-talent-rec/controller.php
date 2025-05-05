@@ -67,7 +67,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         ],
         'button' => [
           'text' => 'Book your free consultation',
-          'url' => '#',
+          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
         ]
       ],
       [
@@ -77,7 +77,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         ],
         'button' => [
           'text' => 'Book your free consultation',
-          'url' => '#',
+          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
         ],
         'info' => [
           'title' => "Cost-Effective talent",
@@ -93,7 +93,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         ],
         'button' => [
           'text' => 'Book your free consultation',
-          'url' => '#',
+          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
         ],
         'info' => [
           'title' => "High english proficiency",
@@ -109,7 +109,7 @@ class ServiceRemoteTalentRec_Controller extends PageBaseController
         ],
         'button' => [
           'text' => 'Book your free consultation',
-          'url' => '#',
+          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
         ],
         'info' => [
           'title' => "Top-Tier talent",
