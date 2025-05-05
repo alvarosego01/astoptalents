@@ -43,7 +43,7 @@
       {% if item.properties.enable_is_button == 1 %}
       {{ Button({
           text: item.title,
-          url: item.url,
+          href: item.url,
           r_icon: "<i class='bx bx-right-arrow-alt'></i>",
           type: item.properties.button_type
       }) }}
@@ -94,7 +94,7 @@
         {% if item.properties.enable_is_button == 1 %}
           {{ Button({
           text: item.title,
-          url: item.url,
+          href: item.url,
           r_icon: "<i class='bx bx-right-arrow-alt'></i>",
           type: item.properties.button_type
           }) }}
@@ -198,7 +198,7 @@
            {% if item.properties.enable_is_button == 1 %}
           {{ Button({
           text: item.title,
-          url: item.url,
+          href: item.url,
           r_icon: "<i class='bx bx-right-arrow-alt'></i>",
           type: item.properties.button_type
           }) }}
