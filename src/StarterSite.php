@@ -103,8 +103,9 @@ class StarterSite extends Site
       wp_enqueue_style('wp-block-library');
       // wp_enqueue_style('dashicons');
 
-      wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+      wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
       wp_enqueue_style('box-icons', 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+      wp_enqueue_style('line-icons', 'https://cdn.lineicons.com/5.0/lineicons.css');
 
       wp_enqueue_style('styles', THEME_DIRECTORY_URI . '/assets/css/main.css', false, THEME_VERSION);
       wp_enqueue_style('tailwind', THEME_DIRECTORY_URI . '/assets/css/tailwind.css', false, THEME_VERSION);
