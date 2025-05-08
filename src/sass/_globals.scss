@@ -31,3 +31,6 @@
 // @mixin responsivoSpecial($desde, $hasta)
 //     @media only screen and (min-width: $desde) and (max-width: $hasta)
 //         @content
+video{
+	border-radius: 20px!important;
+}
