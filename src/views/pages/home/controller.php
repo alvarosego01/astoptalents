@@ -134,7 +134,7 @@ class HomeController extends PageBaseController
           'alt' => 'Your full service',
         ],
         'info' => [
-          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/icon_hands.png') . "'>",
+          'icon' => "<img alt='icon slider' class='w-auto h-14' src='" . $this->general_functions->get_file('/images/icons/apreton-de-manos 1.png') . "'>",
           'title' => "Access the best talent<br> from Latin America",
           'desc' => "ASTopTalent connects U.S. businesses with the top <br class='textBreak'>
           1% of remote talent from Latin America. Our rigorous <br class='textBreak'>
