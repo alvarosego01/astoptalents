@@ -29,7 +29,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
         ],
           'button' => [
           'text' => 'Book your free consultation',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
+          'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
           'title' => "Step 1: Recruitment",
@@ -44,7 +44,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
         ],
           'button' => [
           'text' => 'Book your free consultation',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
+          'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
           'title' => "Step 2: Onboarding & integration",
@@ -60,7 +60,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
         ],
           'button' => [
           'text' => 'Book your free consultation',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
+          'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
           'title' => "Step 3: Payroll & compliance",
@@ -76,7 +76,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
         ],
           'button' => [
           'text' => 'Book your free consultation',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent',
+          'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
           'title' => "Step 4: Ongoing support & performance tracking",
