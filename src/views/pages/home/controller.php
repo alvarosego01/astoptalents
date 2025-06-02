@@ -144,7 +144,7 @@ class HomeController extends PageBaseController
         ],
         'button' => [
           'text' => 'Learn more',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent'
+          'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
       [
@@ -163,7 +163,7 @@ class HomeController extends PageBaseController
         ],
         'button' => [
           'text' => 'Learn more',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent'
+          'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
       [
@@ -182,7 +182,7 @@ class HomeController extends PageBaseController
         ],
         'button' => [
           'text' => 'Learn more',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent'
+          'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
       [
@@ -201,7 +201,7 @@ class HomeController extends PageBaseController
         ],
         'button' => [
           'text' => 'Learn more',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent'
+          'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
       [
@@ -220,7 +220,7 @@ class HomeController extends PageBaseController
         ],
         'button' => [
           'text' => 'Learn more',
-          'url' => 'https://meetings.hubspot.com/andrea861/free-consultation-astoptalent'
+          'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
 
