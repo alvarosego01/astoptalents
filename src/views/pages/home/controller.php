@@ -143,7 +143,7 @@ class HomeController extends PageBaseController
           empowering you to scale quickly with the best talent."
         ],
         'button' => [
-          'text' => 'Learn more',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
@@ -162,7 +162,7 @@ class HomeController extends PageBaseController
           sacrificing quality or performance."
         ],
         'button' => [
-          'text' => 'Learn more',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
@@ -181,7 +181,7 @@ class HomeController extends PageBaseController
           always performing at their best."
         ],
         'button' => [
-          'text' => 'Learn more',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
@@ -200,7 +200,7 @@ class HomeController extends PageBaseController
           productivity and engagement.'
         ],
         'button' => [
-          'text' => 'Learn more',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/'
         ]
       ],
@@ -219,7 +219,7 @@ class HomeController extends PageBaseController
           administrative burdens.'
         ],
         'button' => [
-          'text' => 'Learn more',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/'
         ]
       ],

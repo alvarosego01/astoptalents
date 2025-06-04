@@ -28,7 +28,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book your free consultation',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
@@ -43,7 +43,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book your free consultation',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
@@ -59,7 +59,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book your free consultation',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
@@ -75,7 +75,7 @@ class ServiceTalentManagement_Controller extends PageBaseController
           'alt' => 'Your full service',
         ],
           'button' => [
-          'text' => 'Book your free consultation',
+          'text' => 'Start hiring',
           'url' => 'https://astoptalent.com/appointments/',
         ],
         'info' => [
