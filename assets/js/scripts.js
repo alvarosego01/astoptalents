@@ -1,1 +1,27 @@
-AOS.init({once:!0,duration:400,easing:"ease-out-cubic"});document.addEventListener("DOMContentLoaded",function(){let r=[].slice.call(document.querySelectorAll("img.onLazyLoad"));if("IntersectionObserver"in window){let t=new IntersectionObserver(function(n,a){n.forEach(function(o){if(o.isIntersecting){let e=o.target;e.src=e.dataset.src,e.classList.remove("onLazyLoad"),t.unobserve(e)}})});r.forEach(function(n){t.observe(n)})}});jQuery(document).ready(function(){});
+AOS.init({
+  once: true,
+  // disable: 'phone',
+  duration: 400,
+  easing: "ease-out-cubic"
+});
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.onLazyLoad"));
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("onLazyLoad");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
+jQuery(document).ready(function() {
+});
+//# sourceMappingURL=scripts.js.map

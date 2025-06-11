@@ -1,0 +1,64 @@
+{% extends "base.twig" %}
+
+{% from 'components/buttons/Button.twig' import Component as Button %}
+{% from 'components/content/ImageInfo_1.twig' import Component as ImageInfo_1 %}
+{% from 'components/content/BannerCta_1.twig' import Component as BannerCta_1 %}
+
+{% block content %}
+
+<section class="relative mb-20 overflow-hidden homeHeader bg-lightBlue ">
+
+  <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+    <div class="grid grid-cols-3 pt-32 pb-20 md:pt-52 ">
+
+      <div class="flex flex-col items-start justify-center col-span-3 mx-auto text-center md:mx-0 md:text-left info">
+
+        <h1 class="w-full mb-6 leading-normal text-center text-tealBlue h1 font-uncut-sans" data-aos="zoom-out"
+          data-aos-delay="100">
+          <span class="text-darkBlue">
+            Hire Pre-Vetted Remote Talent from <br> LATAM – Fast, Reliable, and Affordable
+          </span>
+        </h1>
+
+            <p class="w-full text-xl text-center text-grayish " data-aos="zoom-out" data-aos-delay="150">
+            Fill out this short form and we’ll send you a proposal tailored to your hiring needs.
+            </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="mb-10 pcTab:mb-20 ">
+
+  <div class="max-w-6xl px-4 mx-auto sm:px-6">
+
+    <div class="px-10 py-20 lg:px-20 rounded-[50px] contentCard bg-lightBlue">
+      <div class="mb-16 sectionTop" data-aos="zoom-out" data-aos-delay="100">
+
+        <h2
+          class="flex flex-col justify-center gap-2 mx-auto mb-10 font-normal text-center pcTab:flex-row h3 title text-darkBlue">
+          <strong>
+            Please complete the form below
+          </strong>
+        </h2>
+
+      </div>
+
+      <div class=" sectionContent">
+
+  <script src="https://js.hsforms.net/forms/embed/49559704.js" defer></script>
+  <div class="hs-form-frame" data-region="na1" data-form-id="8348b804-3018-4c64-bb29-52113b63989f"
+    data-portal-id="49559704"></div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+{% endblock %}
